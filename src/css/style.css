@@ -1,0 +1,57 @@
+:root {
+    --jeans-blue: #3b5998;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: var(--jeans-blue);
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: var(--jeans-blue);
+    color: #fff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.form-control:focus {
+    border-color: var(--jeans-blue);
+    box-shadow: 0 0 0 0.25rem rgba(59, 89, 152, 0.25);
+}
+
+.btn-jeans {
+    color: #fff;
+    background-color: var(--jeans-blue);
+    border: 1px solid var(--jeans-blue);
+}
+
+.btn-outline-jeans {
+    color: var(--jeans-blue);
+    border: 1px solid var(--jeans-blue);
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-jeans:hover,
+.btn-outline-jeans:focus {
+    background-color: var(--jeans-blue);
+    color: #fff;
+}
+
+.btn-jeans:hover,
+.btn-jeans:focus {
+    background-color: darken(var(--jeans-blue), 10%);
+    border-color: darken(var(--jeans-blue), 10%);
+}
+
+.btn-jeans:hover,
+.btn-jeans:focus {
+    background-color: #334d80;
+    border-color: #334d80;
+}
