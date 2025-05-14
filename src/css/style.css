@@ -7,6 +7,19 @@
   --font-main: 'Roboto Mono', monospace;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: var(--font-main);
@@ -95,5 +108,90 @@ h1, h2, h3, h4, h5, h6 {
 .header-icons i:hover,
 .header-icons span:hover,
 .header-icons div:hover {
+  color: var(--button-color);
+}
+
+.site-footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-weight: 100;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.footer-col {
+  flex: 1 1 180px;
+  max-width: 220px;
+}
+
+.footer-col h4 {
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.footer-col p {
+  margin: 0.2rem 0;
+  font-size: 0.75rem;
+}
+
+.footer-col input[type="email"] {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.8rem 0;
+  font-family: var(--font-main);
+  font-weight: 100;
+  font-size: 0.75rem;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.footer-col button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-family: var(--font-main);
+  font-weight: 100;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.footer-col .legal {
+  font-size: 0.65rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+.footer-col .legal a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-bottom .social-icon {
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom .social-icon:hover {
   color: var(--button-color);
 }
