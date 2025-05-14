@@ -15,6 +15,10 @@ body {
   font-weight: 100;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
 /* Banner */
 .banner {
   background-color: #000;
@@ -62,14 +66,34 @@ body {
   color: var(--button-color);
 }
 
-/* Icons */
+/* Icons section */
 .header-icons {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.icon {
-  cursor: pointer;
+/* Bootstrap icon reset */
+.bi {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--text-color);
+  vertical-align: middle;
+}
+
+/* Text inside icon section */
+.header-icons span,
+.header-icons div {
+  font-family: var(--font-main);
   font-weight: 100;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/*hover effect for icons/text */
+.header-icons i:hover,
+.header-icons span:hover,
+.header-icons div:hover {
+  color: var(--button-color);
 }
