@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Thrasher Hoodie",
+        "brand": "Thrasher",
+        "category": "hoodies",
+        "price": 499,
+        "image": "https://example.com/images/thrasher-hoodie.jpg"
+    }
+]
