@@ -1,12 +1,18 @@
 :root {
-    --bg-color: #CDD9E4;
-    --button-color: #223045;
-    --text-color: #000000;
-    --font-main: 'Roboto Mono', monospace;
-  }
-  
-  body {
-    font-family: var(--font-main);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
+  --bg-color: #CDD9E4;
+  --button-color: #223045;
+  --text-color: #000000;
+  --font-main: 'Roboto Mono', monospace;
+}
+
+
+body {
+  font-family: var(--font-main);
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
