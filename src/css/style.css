@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
 :root {
   --bg-color: #CDD9E4;
   --button-color: #223045;
@@ -5,14 +7,69 @@
   --font-main: 'Roboto Mono', monospace;
 }
 
-
 body {
+  margin: 0;
   font-family: var(--font-main);
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-weight: 100;
 }
 
+/* Banner */
+.banner {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+}
 
+.banner-text {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.dropdown {
+  cursor: pointer;
+  font-weight: 100;
+  transition: color 0.2s ease;
+}
+
+.dropdown:hover {
+  color: var(--button-color);
+}
+
+/* Icons */
+.header-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  font-weight: 100;
+}
