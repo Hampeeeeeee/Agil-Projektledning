@@ -4,3 +4,9 @@
     --text-color: #000000;
     --font-main: 'Roboto Mono', monospace;
   }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
