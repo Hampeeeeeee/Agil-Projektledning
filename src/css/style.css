@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: var(--text-color);
   transition: border-color 0.3s ease;
+  resize: none;
 }
 
 .contact-form input:focus,
