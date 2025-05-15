@@ -29,6 +29,12 @@ body {
     font-weight: 100;
 }
 
+a[aria-current="page"] {
+    background-color: var(--button-color);
+    color: #fff;
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -106,6 +112,7 @@ h6 {
     padding: 0.5rem 1rem;
     font-family: var(--font-main);
     font-size: 1rem;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
