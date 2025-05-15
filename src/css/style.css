@@ -63,20 +63,78 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.logo-button {
+  text-decoration: none; 
+  color: inherit; 
+  font-weight: bold; 
+  font-size: 1.5rem; 
+}
+
+.logo-button:hover {
+  color: var(--button-color); 
+}
+
 /* Navigation */
 .nav-menu {
   display: flex;
   gap: 2rem;
+  margin-right: 600px;
+  margin-left: 100px;
 }
 
 .dropdown {
   cursor: pointer;
   font-weight: 100;
   transition: color 0.2s ease;
+  position: relative; 
 }
 
 .dropdown:hover {
   color: var(--button-color);
+}
+
+.dropdown-button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: var(--button-color);
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute; 
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column; 
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: inherit; 
+  text-decoration: none; 
+  font-weight: normal; 
+  padding: 8px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
 }
 
 /* Icons section */
