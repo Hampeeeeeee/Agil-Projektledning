@@ -151,5 +151,195 @@
         "price": 300,
         "image1": "https://image.hm.com/assets/hm/b2/ed/b2edf426d6d1aeac9e204e582f0d6412c6188adf.jpg?imwidth=1536",
         "image2": "https://image.hm.com/assets/hm/6d/7c/6d7c6ab4a8332d49af4a68e68d0d4f29ebaee408.jpg?imwidth=1536"
+    },
+    {
+        "id": "5cbc1ac9-c648-4df1-a749-2ec50d2ea189",
+        "name": "COSMIC RAY RETRO FIT HOODIE - Sweatshirt - marshmallow",
+        "brand": "Vans",
+        "category": "Hoodies",
+        "department": "Women",
+        "price": 850,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/8f9295630501462a985133b3bb744911/75d764489e2f47b4a3a26aeefede6d39.jpg?imwidth=1800&filter=packshot",
+        "image2": "https://img01.ztat.net/article/spp-media-p1/1e5b1a6bfd834c31bbf4673e030d4ad9/c0c0d528138747a796ebd11670915e1c.jpg?imwidth=1800"
+    },
+    {
+        "id": "a6650df6-9399-4b5f-b673-4424207a7f41",
+        "name": "Close Up hoodie med tryck",
+        "brand": "JUNKYARD",
+        "category": "Hoodies",
+        "department": "Women",
+        "price": 700,
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7367887_002_f_f_junkyard_jycloseuphoodieprinted2411_q3_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=800&q=60"
+    },
+    {
+        "id": "50010367-cb83-43ec-af0d-4a24c24c51a9",
+        "name": "CARPENTER - Tygbyxor - khaki",
+        "brand": "Next",
+        "category": "Pants",
+        "department": "Women",
+        "price": 550,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/81c8da28cc4a42f1b2bad3838ce041ea/e24d57f80b9a4d728e15f2daacd90e54.jpg?imwidth=1800"
+    },
+    {
+        "id": "ca4dcf92-2b5a-4367-8d94-86f7cfc72f40",
+        "name": "Arbetsbyxor Med Flera Fickor Och Pressveck",
+        "brand": "Dickies",
+        "category": "Pants",
+        "department": "Women",
+        "price": 600,
+        "image1": "https://www.dickieslife.com/media/catalog/product/cache/a4fef9ead58a23401f302d3c347a5869/D/K/DK0A863MBLK1-50_1_10.jpg"
+    },
+    {
+        "id": "3c433fc7-419a-4d89-92db-f9320be16c57",
+        "name": "Baggy Wide Leg Jeans",
+        "brand": " H&M",
+        "category": "Jeans",
+        "department": "Women",
+        "price": 300,
+        "image1": "https://image.hm.com/assets/hm/79/ac/79ac3ebed4bc2a4496ef0e5a18260e2294631974.jpg?imwidth=1536"
+    },
+    {
+        "id": "3f7f0a65-1dff-420f-8828-aadce28aa07d",
+        "name": "Loose jeans med raka ben",
+        "brand": "JUNKYARD",
+        "category": "Jeans",
+        "department": "Women",
+        "price": 700,
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7366337_520_f_f_junkyard_jy_skate_jeans_aca2409_q3_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60"
+    },
+    {
+        "id": "b44a797a-93d4-4c22-afc8-3f78f8a056e8",
+        "name": "BB 4000 II - Låga sneakers",
+        "brand": "Reebok Classics",
+        "category": "Shoes",
+        "department": "Women",
+        "price": 400,
+        "image1": "https://image-resizing.booztcdn.com/reebok-classics/rcsw0074747_cpalbluwhtpalblu.webp?has_grey=1&has_webp=1&size=w400&dpr=2.5",
+        "image2": "https://image-resizing.booztcdn.com/reebok-classics/rcsw0074747_cpalbluwhtpalblu_3.webp?has_grey=1&has_webp=1&size=w400&dpr=2.5"
+    },
+    {
+        "id": "4abbe1dc-01d4-42d1-b588-015ac21c32f6",
+        "name": "Manteca 4 Sneakers",
+        "brand": "DC Shoes",
+        "category": "Shoes",
+        "department": "Women",
+        "price": 600,
+        "image1": "https://images.blue-tomato.com/is/image/bluetomato/305260313_front.jpg-RMu-Cfz52rWXrRSYbAjdhcTS9NE/305260313+front+jpg.jpg?$tsh$&wid=1324&hei=1764&fit=crop%2C1",
+        "image2": "https://images.blue-tomato.com/is/image/bluetomato/305260313_detail01.jpg-7s1H98PZTB6pk2TgcEvcyywcoXc/305260313+detail01+jpg.jpg?$tsh$&wid=198&hei=264&fit=crop%2C1"
+    },
+    {
+        "id": "b086b439-29bf-4956-900c-25c167e38f73",
+        "name": "T-shirt Stockholm Eternal Pizza Off-White",
+        "brand": "Dedicated",
+        "category": "T-shirt",
+        "department": "Unisex",
+        "price": 400,
+        "image1": "https://tshirtstore.centracdn.net/client/dynamic/images/10381_c985acc34d-22789_1-ded-large.jpg",
+        "image2": "https://tshirtstore.centracdn.net/client/dynamic/images/10381_37f3569348-22789_2-ded-large.jpg"
+    },
+    {
+        "id": "6aea2cec-b0a1-4271-8f28-70d73eba0592",
+        "name": "Skate difficult to love T-Shirt",
+        "brand": "Vans",
+        "category": "T-shirt",
+        "department": "Unisex",
+        "price": 350,
+        "image1": "https://assets.vans.eu/images/t_img/c_fill,g_center,f_auto,h_815,w_652,e_unsharp_mask:100/dpr_2.0/v1730503995/VN000JEHFS8-HERO/Skate-difficult-to-love-TShirt.png",
+        "image2": "https://assets.vans.eu/images/t_img/c_fill,g_center,f_auto,h_815,w_652,e_unsharp_mask:100/dpr_2.0/v1730503995/VN000JEHFS8-ALT1/Skate-difficult-to-love-TShirt.png"
+    },
+    {
+        "id": "4ae2deca-c756-46a7-9d14-ac6445354618",
+        "name": "Pastel Coral Sweatshirt",
+        "brand": "Vegan Outfitters",
+        "category": "Sweatshirt",
+        "department": "Unisex",
+        "price": 600,
+        "image1": "https://veganoutfitters.com/cdn/shop/files/Pastel-Coral-sweatshirt-black_PF_V2_1024x1024@2x.jpg?v=1743157971"
+    },
+    {
+        "id": "57ed1b14-4a3c-4990-889d-e6d16dcbaf28",
+        "name": "Winter Resort Mountain Graphic Fleece Crewneck Sweatshirt",
+        "brand": "Adidas",
+        "category": "Sweatshirt",
+        "department": "Unisex",
+        "price": 750,
+        "image1": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/22ab524684974002af77c87397d56ee7_9366/Winter_Resort_Mountain_Graphic_Fleece_Crewneck_Sweatshirt_Burgundy_KC3512_02_laydown.jpg",
+        "image2": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9f75108b1a0472588f1e529fdb9def0_9366/Winter_Resort_Mountain_Graphic_Fleece_Crewneck_Sweatshirt_Burgundy_KC3512_01_laydown.jpg "
+    },
+    {
+        "id": "e4ac8dad-6a6a-4ad7-980c-30341f7fcccd",
+        "name": "Ulrike | Stilren vinterhuvtröja",
+        "brand": "Bycastello",
+        "category": "Hoodies",
+        "department": "Unisex",
+        "price": 700,
+        "image1": "https://www.bycastello.se/cdn/shop/files/image_236_1725349125103-29492930-57523722-64759900_6.png?v=1739129811&width=1000",
+        "image2": "https://www.bycastello.se/cdn/shop/files/image_773_1725349125049-61395392-45022748-62669814_9.jpg?v=1739129810&width=800"
+    },
+    {
+        "id": "fa0c6d01-af82-431b-81ac-30d96841cc71",
+        "name": "Oversized hoodie",
+        "brand": "The Cava Company",
+        "category": "Hoodies",
+        "department": "Unisex",
+        "price": 750,
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7356878_700_f_f_cava_cava_big_skate_hood_print2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
+        "image2": "https://junkyard.imgix.net/globalassets/productimages/7356878_700_b_f_cava_cava_big_skate_hood_print2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60"
+    },
+    {
+        "id": "9b887616-a025-47bc-9440-c6fae889416e",
+        "name": "Manchesterbyxor",
+        "brand": "Adidas",
+        "category": "Pants",
+        "department": "Unisex",
+        "price": 800,
+        "image1": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3b5ead72e81f4f2aa17cc7276cb72e47_9366/Manchesterbyxor_Gra_JD5411_01_laydown.jpg "
+    },
+    {
+        "id": "fce988cd-8132-48c0-8cbf-7adcf6d4b04b",
+        "name": "Vid cargobyxa",
+        "brand": "H&M",
+        "category": "Pants",
+        "department": "Unisex",
+        "price": 250,
+        "image1": "https://www2.hm.com/sv_se/productpage.1230836008.html?utm_source=google&utm_medium=cpc&utm_campaign=mk_se|ln_swe|pl_google|ct_fm|bu_divided|kt_gen|bg_performance|cs_fmax|adt_all|sp_med|pi_seg06anu3aa214&utm_term=&gad_source=1&gad_campaignid=21270539441&gbraid=0AAAAADvrmzSwPTx-vn0utzQpzsS6AMhTf&gclid=CjwKCAjw_pDBBhBMEiwAmY02Nlx4nHp0O7D4Ie81oP9t8YFXFV3UWmR4AT_hsTNNRtCjDeaFTncpGhoCGqoQAvD_BwE"
+    },
+    {
+        "id": "540cf653-f78d-4952-91af-26942276491f",
+        "name": "Skate Baggy 5 Pocket New Deep Dark Indigo - Flat Finish",
+        "brand": "Levi's Skateboarding",
+        "category": "Jeans",
+        "department": "Unisex",
+        "price": 1000,
+        "image1": "https://caliroots.com/cdn/shop/products/60640-28_001_5000x.png?v=1679713908"
+    },
+    {
+        "id": "855c672d-208a-4384-a236-ba9bee96981e",
+        "name": "Baggy jeans - Big skate",
+        "brand": "SWEET SKTBS",
+        "category": "Jeans",
+        "department": "Unisex",
+        "price": 700,
+        "image1": "https://junkyard.imgix.net/globalassets/21---other/productimages/7332556_510_f_f_sweetsktbs_sweetbigskatejeansnos2312_nos_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60"
+    },
+    {
+        "id": "ad519728-0b1e-4bfc-b9d8-2a666c3963b6",
+        "name": "TILT - Skateskor - parchment",
+        "brand": "Globe",
+        "category": "Shoes",
+        "department": "Unisex",
+        "price": 600,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/36991a5982464e878bfaf38361927795/fe59b0ffe321461baa2942462f5cb69e.jpg?imwidth=156&filter=packshot",
+        "image2": "https://img01.ztat.net/article/spp-media-p1/9b708f57cbba4558b3de87931f137bc5/7122b4036bef41f4a2e93213e7d22cbf.jpg?imwidth=156 "
+    },
+    {
+        "id": "c15b52e9-ece0-4d2f-a9b8-5346bc17e16e",
+        "name": "STAG - Sneakers - nel neon lights",
+        "brand": "DC Shoes",
+        "category": "Shoes",
+        "department": "Unisex",
+        "price": 850,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/121af5fde74b43cbaf355ab400c82f3a/b49e3f4b94274db9886b2fa178d51bfa.jpg?imwidth=156",
+        "image2": "https://img01.ztat.net/article/spp-media-p1/7a7a33053f274dc192ea9cf63823b1b1/c873d0d9d3114d99bbde953674ae15ae.jpg?imwidth=156"
     }
 ]
