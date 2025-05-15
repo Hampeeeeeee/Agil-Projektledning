@@ -1,10 +1,12 @@
 [
     {
-        "id": "3306a9cd-67d7-4bae-96ef-39312953765b",
-        "name": "Thrasher Hoodie",
-        "brand": "Thrasher",
-        "category": "hoodies",
-        "price": 499,
-        "image": "https://example.com/images/thrasher-hoodie.jpg"
+        "id": "61eff5ae-95fb-426d-9a90-807b2c173b88",
+        "name": "Loose Eye t-shirt",
+        "brand": "SWEET SKTBS",
+        "category": "T-shirt",
+        "department": "Men",
+        "price": 300,
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
+        "image2": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_b_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 "
     }
 ]
