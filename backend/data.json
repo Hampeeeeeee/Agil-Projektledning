@@ -8,5 +8,148 @@
         "price": 300,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
         "image2": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_b_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 "
+    },
+    {
+        "id": "f9c0ef6e-2c7f-477b-9580-efcfe7c8ee78",
+        "name": "Classic 87 Swirl T-Shirt",
+        "brand": "Spitfire",
+        "category": "T-shirt",
+        "department": "Men",
+        "price": 350,
+        "image1": "https://static.skatepro.com/product/1800/spitfire-classic-87-swirl-t-shirt-65.webp",
+        "image2": "https://cdn.skatepro.com/product/520/spitfire-classic-87-swirl-t-shirt-3.webp"
+    },
+    {
+        "id": "2d4eca0d-88a0-4c80-a393-07c930677014",
+        "name": "Screaming Scratched Hand Strip",
+        "brand": "Santa Cruz",
+        "category": "Sweatshirt",
+        "department": "Men",
+        "price": 800,
+        "image1": "https://cdn.skatepro.com/product/520/santa-cruz-screaming-scratched-hand-strip-is.webp"
+    },
+    {
+        "id": "03dfe032-d7cb-47fe-af50-c812ecc63036",
+        "name": "Made To Roam Sweatshirt",
+        "brand": "Passenger",
+        "category": "Sweatshirt",
+        "department": "Men",
+        "price": 700,
+        "image1": "https://se.passenger-clothing.com/cdn/shop/files/hDzIS4f1c5tj2dG_w_rftc0EBxbNPIPdaewmaySQS_4.jpg?v=1742379089&width=713",
+        "image2": "https://se.passenger-clothing.com/cdn/shop/files/UcaNRfsmGy9Mav0bPTaXKUPVGEndJWv1EvDY5_5bQS8.jpg?v=1742379089&width=713"
+    },
+    {
+        "id": "bf1e3cfd-4f84-4879-af12-20d0ae6cb842",
+        "name": "Hoodie Cloud",
+        "brand": "Poetic Collective",
+        "category": "Hoodies",
+        "department": "Men",
+        "price": 1000,
+        "image1": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2Fbb%2F55%2Fa6%2F65%2F65a655bbf039b9ec8df6be04%2Fhoodie-poetic-collective-cloud-brown.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
+        "image2": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2Fba%2F55%2Fa6%2F65%2F65a655baf039b9ec8df6be03%2Fhoodie-poetic-collective-cloud-brown-back.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100"
+    },
+    {
+        "id": "8dd97809-7658-4ad3-91d7-ab4142f97838",
+        "name": "Killa Bee | Luvtröja | beige | Wu-Tang Clan",
+        "brand": "EMP",
+        "category": "Hoodies",
+        "department": "Men",
+        "price": 600,
+        "image1": "https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw9cf839d9/images/5/3/1/1/531179a.jpg?sfrm=png"
+    },
+    {
+        "id": "67437350-c4a7-4be7-a98e-a1221f05ee29",
+        "name": "FLINT - Tygbyxor - park",
+        "brand": "Carhartt WIP",
+        "category": "Pants",
+        "department": "Men",
+        "price": 1400,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/7c3b28df4b214e20b89f5a614d7c6621/b4e46458706048c88ca17d11013da5d9.jpg?imwidth=1800&filter=packshot"
+    },
+    {
+        "id": "0ee5d767-332b-4cc5-a475-da9ec5f1e38d",
+        "name": "Cargobyxor - dark brown",
+        "brand": "PULL&BEAR",
+        "category": "Pants",
+        "department": "Men",
+        "price": 500,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/80900d8f463949349ac29119a5e94912/941767a7473348f9b32482a624f1a899.jpg?imwidth=156&filter=packshot"
+    },
+    {
+        "id": "df989410-4ca8-4361-9b6d-f34c58be57a4",
+        "name": "Jeans Phantasy",
+        "brand": "Yardsale",
+        "category": "Jeans",
+        "department": "Men",
+        "price": 1100,
+        "image1": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2F89%2Fcd%2F3c%2F67%2F673ccd8969830efae7063f14%2Fyardsale-jeans-phantasy-black-back_0zgwdr.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
+        "image2": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2F89%2Fcd%2F3c%2F67%2F673ccd8969830efae7063f14%2Fyardsale-jeans-phantasy-black-back_0zgwdr.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100"
+    },
+    {
+        "id": "4c1663f9-a311-4a73-befb-f77e35c2371b",
+        "name": "Mega Skate Jeans",
+        "brand": "SWEET SKTBS",
+        "category": "Jeans",
+        "department": "Men",
+        "price": 900,
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7370440_903_f_f_sweet_sweet_mga_skate_jeans2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60"
+    },
+    {
+        "id": "ca797d1e-33a2-4104-9cf9-13efac0bd9f7",
+        "name": "FUSION - Skateskor",
+        "brand": "Globe",
+        "category": "Shoes",
+        "department": "Men",
+        "price": 600,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/c59213a3947e4727a9c21242ed4c6e42/85a214130698463b98c4ac4a87c98488.jpg?imwidth=156",
+        "image2": "https://img01.ztat.net/article/spp-media-p1/c6eaaa3e7e86439d89191980946f8a97/11b007b30d7541c9b13dd742e0d7edaf.jpg?imwidth=156&filter=packshot "
+    },
+    {
+        "id": "653600bb-d208-4e73-b8ff-9d323521b3cf",
+        "name": "DC Manteca 4 Shoes (blue blue white)",
+        "brand": "DC Shoes",
+        "category": "Shoes",
+        "department": "Men",
+        "price": 650,
+        "image1": "https://cdn.skatedeluxe.com/thumb/wU74IYd7kxDbF7S__KWthNbTxdE=/fit-in/600x700/filters:fill(white):brightness(-4)/product/166509-0-DC-Manteca4.jpg",
+        "image2": "https://cdn.skatedeluxe.com/thumb/v6irUNNoUz2lE4Jg1rxuwkCy7Xc=/fit-in/600x700/filters:fill(white):brightness(-4)/product/166509-1-DC-Manteca4.jpg"
+    },
+    {
+        "id": "94368bea-2235-4461-9509-595b199adf67",
+        "name": "Oversized T-shirt med tryck",
+        "brand": "H&M",
+        "category": "T-shirt",
+        "department": "Women",
+        "price": 150,
+        "image1": "https://image.hm.com/assets/hm/04/9b/049b8b579cdcc15e9fa9bdc0074a5e49db6da9f0.jpg?imwidth=1536",
+        "image2": "https://image.hm.com/assets/hm/33/04/330416de3b290c19b8b37f33325b834a902ae321.jpg?imwidth=1536"
+    },
+    {
+        "id": "e30d6e8d-b5cc-4dec-9836-9b2628e9133c",
+        "name": "STRETCH SHORT RETRO BASEBALL TEE - T-shirt med print - whitesand hugered",
+        "brand": "Urban Classics",
+        "category": "T-shirt",
+        "department": "Women",
+        "price": 250,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/5c049da8f70b44eba11d342e04befacc/91d13ec1d0a54ef5b9d61c2b0f06d8f8.jpg?imwidth=1800&filter=packshot"
+    },
+    {
+        "id": "566ae118-3755-4f5d-badd-f6e45e7e47ce",
+        "name": "Sweatshirt - blue",
+        "brand": "Self.",
+        "category": "Sweatshirt",
+        "department": "Women",
+        "price": 550,
+        "image1": "https://img01.ztat.net/article/spp-media-p1/b5f93bb1898f4abdbc29aaf7244f5cdc/9df742e5bf194715ab49a80ec6894874.jpg?imwidth=1800"
+    },
+    {
+        "id": "08d2178b-d321-4dad-a0ca-8a889b78f6cb",
+        "name": "Oversized sweatshirt med tryck",
+        "brand": "H&M",
+        "category": "Sweatshirt",
+        "department": "Women",
+        "price": 300,
+        "image1": "https://image.hm.com/assets/hm/b2/ed/b2edf426d6d1aeac9e204e582f0d6412c6188adf.jpg?imwidth=1536",
+        "image2": "https://image.hm.com/assets/hm/6d/7c/6d7c6ab4a8332d49af4a68e68d0d4f29ebaee408.jpg?imwidth=1536"
     }
 ]
