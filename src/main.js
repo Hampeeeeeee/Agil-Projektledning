@@ -17,7 +17,9 @@ function createProductCard(product) {
         <img src="${product.image1}"/>
         <img src="${product.image2}"/>
     </div>
-    <p>${product.description}</p>
+    <p>Department: ${product.department}</p>
+    <p>Brand: ${product.brand}</p>
+    <p>${product.category}</p>
     <p>Price: $${product.price}</p>
 `;
     return card;
