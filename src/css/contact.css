@@ -302,18 +302,19 @@ h6 {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  max-width: 100%;
-  padding: 0.9rem 1rem;
-  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
   font-family: var(--font-main);
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: transparent;
   color: var(--text-color);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
   resize: none;
   box-sizing: border-box;
+  height: auto;
 }
+
 .contact-form textarea {
     height: 160px;
   }  
