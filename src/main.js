@@ -19,7 +19,7 @@ function createProductCard(product) {
     <p>Department: ${product.department}</p>
     <p>Brand: ${product.brand}</p>
     <p>${product.category}</p>
-    <p>Price: $${product.price}</p>
+    <p>Price: ${product.price} kr</p>
 `
   return card
 }
