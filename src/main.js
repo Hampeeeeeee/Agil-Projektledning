@@ -89,4 +89,4 @@ let autoSlide = setInterval(() => {
   sliderImage.style.transition = 'transform 0.4s ease-in-out';
   counter++;
   sliderImage.style.transform = 'translateX(' + (-size * counter) + 'px)';
-}, 3000);
+}, 6000);
