@@ -301,16 +301,24 @@ h6 {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 0.6rem;
-    font-family: var(--font-main);
-    font-size: 0.9rem;
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: var(--text-color);
-    transition: border-color 0.3s ease;
-    resize: none;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  font-family: var(--font-main);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+  resize: none;
+  box-sizing: border-box;
+  height: auto;
 }
 
+.contact-form textarea {
+    height: 120px;
+  }  
+  
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
