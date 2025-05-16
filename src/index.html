@@ -1,187 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Agil Projektledning</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <script type="module" src="./main.js" defer></script>
-    </head>
 
-    <body>
-        <main class="page-wrapper">
-            <div class="banner">
-                <p class="banner-text">SHOP LTHLL SUMMER COLLECTION NOW!</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agil Projektledning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./main.js" defer></script>
+</head>
+
+<body>
+    <main class="page-wrapper">
+        <div class="banner">
+            <p class="banner-text">SHOP LTHLL SUMMER COLLECTION NOW!</p>
+        </div>
+
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html" class="logo-button">LTHLL</a>
             </div>
-
-            <header class="main-header">
-                <div class="logo">
-                    <a href="index.html" class="logo-button">LTHLL</a>
-                </div>
-                <nav class="nav-menu">
-                    <div class="dropdown">
-                        <button class="dropdown-button" data-page="men.html" onclick="location.href='men.html'">Men</button>
-                        <div class="dropdown-content">
-                            <a href="#">T-Shirts</a>
-                            <a href="#">Hoodies</a>
-                            <a href="#">Jeans</a>
-                            <a href="#">Pants</a>
-                            <a href="#">Gear</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-button" data-page="women.html" onclick="location.href='women.html'">Women</button>
-                        <div class="dropdown-content">
-                            <a href="#">T-Shirts</a>
-                            <a href="#">Hoodies</a>
-                            <a href="#">Jeans</a>
-                            <a href="#">Pants</a>
-                            <a href="#">Gear</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-button" data-page="unisex.html" onclick="location.href='unisex.html'">Unisex</button>
-                        <div class="dropdown-content">
-                            <a href="#">T-Shirts</a>
-                            <a href="#">Hoodies</a>
-                            <a href="#">Jeans</a>
-                            <a href="#">Pants</a>
-                            <a href="#">Gear</a>
-                        </div>
-                    </div>
-                </nav>
-                <div class="header-icons">
-                    <i class="bi bi-search" title="Search"></i>
-                    <span class="stores" title="Find a Store">Stores</span>
-                    <i class="bi bi-heart" title="Wishlist"></i>
-                    <div class="cart" title="Cart">
-                        <i class="bi bi-bag"></i>
+            <nav class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropdown-button" data-page="men.html" onclick="location.href='men.html'">Men</button>
+                    <div class="dropdown-content">
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Pants</a>
+                        <a href="#">Gear</a>
                     </div>
                 </div>
-            </header>
-            <div class="img_slider">
-      
-      <i class="fa-solid fa-arrow-left" id="prevBtn"></i>
-      <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
+                <div class="dropdown">
+                    <button class="dropdown-button" data-page="women.html"
+                        onclick="location.href='women.html'">Women</button>
+                    <div class="dropdown-content">
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Pants</a>
+                        <a href="#">Gear</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button" data-page="unisex.html"
+                        onclick="location.href='unisex.html'">Unisex</button>
+                    <div class="dropdown-content">
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Pants</a>
+                        <a href="#">Gear</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-icons">
+                <i class="bi bi-search" title="Search"></i>
+                <span class="stores" title="Find a Store">Stores</span>
+                <i class="bi bi-heart" title="Wishlist"></i>
+                <div class="cart" title="Cart">
+                    <i class="bi bi-bag"></i>
+                </div>
+            </div>
+        </header>
+        <div class="img_slider">
 
-    <div class="sliderimg">  
-      <img src="images/image04.jpg" id="lastclone" alt="">
-      <img src="images/image01.jpg" alt="">
-      <img src="images/image02.jpg" alt="">
-      <img src="images/image03.jpg" alt="">
-      <img src="images/image04.jpg" alt="">
-      <img src="images/image01.jpg" id="first-clone" alt="">
-      </div>
-    </div>
+            <i class="fa-solid fa-arrow-left" id="prevBtn"></i>
+            <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
+
+            <div class="sliderimg">
+                <img src="images/image04.jpg" id="lastclone" alt="">
+                <img src="images/image01.jpg" alt="">
+                <img src="images/image02.jpg" alt="">
+                <img src="images/image03.jpg" alt="">
+                <img src="images/image04.jpg" alt="">
+                <img src="images/image01.jpg" id="first-clone" alt="">
+            </div>
+        </div>
 
         <div class="text-box">
-         <h2>    Elevate your lifestyle - on and off the board!<br>
+            <h2> Elevate your lifestyle - on and off the board!<br>
                 Clothes for men, women, and riders who move different.</h2>
+        </div>
+
+
+        <div class="container">
+            <!---box 1---->
+            <a href="page1.html" class="box-link">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="images/box-image01.jpg" alt="blog">
+                        <div class="image-text">Men</div>
+                    </div>
+                </div>
+            </a>
+
+            <!---box 2---->
+            <a href="page2.html" class="box-link">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="images/skateboard.jpg" alt="blog">
+                        <div class="image-text">Women</div>
+                    </div>
+                </div>
+            </a>
+
+            <!---box 3---->
+            <a href="page3.html" class="box-link">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="images/skateboard03.jpg" alt="blog">
+                        <div class="image-text">Unisex</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4><a href="contact.html" class="light">Contact Us</a></h4>
+                <p>+1 (844) 326-6000</p>
+                <p>Email Us</p>
+                <p>Mon–Fri 9am–3pm PT</p>
             </div>
 
-
-  <div class="container">
-  <!---box 1---->
-  <a href="page1.html" class="box-link">
-    <div class="box">
-      <div class="box-image">
-        <img src="images/box-image01.jpg" alt="blog">
-        <div class="image-text">Men</div>
-      </div>  
-    </div>
-  </a>
-
-  <!---box 2---->
-  <a href="page2.html" class="box-link">
-    <div class="box">
-      <div class="box-image">
-        <img src="images/skateboard.jpg" alt="blog">
-        <div class="image-text">Women</div>
-      </div>  
-    </div>
-  </a>
-
-  <!---box 3---->
-  <a href="page3.html" class="box-link">
-    <div class="box">
-      <div class="box-image">
-        <img src="images/skateboard03.jpg" alt="blog">
-        <div class="image-text">Unisex</div>
-      </div>  
-    </div>
-  </a>
-</div>
-
-      
-         
-        </main>
-
-        <footer class="site-footer">
-            <div class="footer-columns">
-                <div class="footer-col">
-                    <h4><a href="contact.html" class="light">Contact Us</a></h4>
-                    <p>+1 (844) 326-6000</p>
-                    <p>Email Us</p>
-                    <p>Mon–Fri 9am–3pm PT</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Customers</h4>
-                    <p>Start a Return</p>
-                    <p>Return Policy</p>
-                    <p>FAQ</p>
-                    <p>Catalogs and Mailers</p>
-                    <p>About Group Gifting</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <p>About Us</p>
-                    <p>Sustainability</p>
-                    <p>Discover Revive</p>
-                    <p>Careers</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms</p>
-                </div>
-
-                <div class="footer-col newsletter">
-                    <h4>Get the latest new from us</h4>
-                    <input
-                        type="email"
-                        placeholder="Enter your email address"
-                    />
-                    <p class="legal">
-                        By signing up, you agree to our
-                        <a href="#">Privacy Policy</a> and
-                        <a href="#">Terms of Service</a>.
-                    </p>
-                    <button>Subscribe</button>
-                </div>
+            <div class="footer-col">
+                <h4>Customers</h4>
+                <p>Start a Return</p>
+                <p>Return Policy</p>
+                <p>FAQ</p>
+                <p>Catalogs and Mailers</p>
+                <p>About Group Gifting</p>
             </div>
 
-            <div class="footer-bottom">
-                <a href="#" class="social-icon" title="Instagram"
-                    ><i class="bi bi-instagram"></i
-                ></a>
-                <a href="#" class="social-icon" title="Facebook"
-                    ><i class="bi bi-facebook"></i
-                ></a>
-                <a href="#" class="social-icon" title="Twitter"
-                    ><i class="bi bi-twitter"></i
-                ></a>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Sustainability</p>
+                <p>Discover Revive</p>
+                <p>Careers</p>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
             </div>
-        </footer>
 
-        <script src="./js/script.js"></script>
-    </body>
+            <div class="footer-col newsletter">
+                <h4>Get the latest new from us</h4>
+                <input type="email" placeholder="Enter your email address" />
+                <p class="legal">
+                    By signing up, you agree to our
+                    <a href="#">Privacy Policy</a> and
+                    <a href="#">Terms of Service</a>.
+                </p>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
 </html>
