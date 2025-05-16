@@ -17,7 +17,6 @@
         "url": "https://github.com/Hampeeeeeee/Agil-Projektledning/issues"
     },
     "homepage": "https://github.com/Hampeeeeeee/Agil-Projektledning#readme",
-    "description": "",
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^5.1.0",
