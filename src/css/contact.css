@@ -316,9 +316,9 @@ h6 {
 }
 
 .contact-form textarea {
-    height: 160px;
+    height: 120px;
   }  
-
+  
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
