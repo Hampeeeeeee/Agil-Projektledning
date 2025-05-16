@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap");
+@import url("/src/css/admin.css");
 
 :root {
     --bg-color: #cdd9e4;
@@ -730,19 +731,29 @@ h2{
     background-color: #000;
 }
 
-/* Revert file input button styling */
+/* File input styling */
 input[type="file"] {
-    align-self: flex-start;
+    color-scheme: dark;
+    width: 115px;
+    color: transparent;
+    padding: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
     background-color: var(--button-color);
     color: #fff;
     border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: var(--font-main);
+    margin: 0;
+    width: 100%;
+    line-height: 1;
+    height: 32px;
 }
 
-input[type="file"]:hover {
+input[type="file"]::-webkit-file-upload-button:hover {
     background-color: #000;
 }
