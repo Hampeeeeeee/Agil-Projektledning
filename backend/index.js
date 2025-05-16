@@ -38,6 +38,7 @@ app.post("/products", async (req, res) => {
         const newProduct = {
             id: uuidv4(),
             ...req.body,
+            timestamp: new Date().toISOString(),
         };
         products.push(newProduct);
         await fs.writeFile(
