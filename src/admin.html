@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/admin.css" />
+        <link rel="stylesheet" href="./css/admin.css" />
         <script type="module" src="./main.js" defer></script>
     </head>
     <body>
@@ -130,11 +130,18 @@
                     />
 
                     <label for="product-category">Category</label>
-                    <select
-                        id="product-category"
-                        name="product-category"
-                        required
-                    ></select>
+                    <select id="product-category" name="product-category">
+                        <option value="">Choose a category</option>
+                    </select>
+
+                    <label for="new-product-category"
+                        >Or Add New Category</label
+                    >
+                    <input
+                        type="text"
+                        id="new-product-category"
+                        name="new-product-category"
+                    />
 
                     <label for="product-department">Department</label>
                     <input
@@ -177,11 +184,6 @@
                     <button type="submit">Add Product</button>
                 </form>
                 <br />
-                <form id="add-category">
-                    <label for="category">Add Category</label>
-                    <input type="text" id="category" name="category" required />
-                    <button id="category-button">Add Category</button>
-                </form>
                 <br />
                 <button id="view-products-btn">View Added Products</button>
             </section>
