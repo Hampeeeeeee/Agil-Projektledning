@@ -14,6 +14,8 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/admin.css" />
+        <script type="module" src="./main.js" defer></script>
     </head>
     <body>
         <div class="banner">
@@ -128,12 +130,11 @@
                     />
 
                     <label for="product-category">Category</label>
-                    <input
-                        type="text"
+                    <select
                         id="product-category"
                         name="product-category"
                         required
-                    />
+                    ></select>
 
                     <label for="product-department">Department</label>
                     <input
@@ -175,6 +176,7 @@
 
                     <button type="submit">Add Product</button>
                 </form>
+                <br />
                 <form id="add-category">
                     <label for="category">Add Category</label>
                     <input type="text" id="category" name="category" required />
@@ -240,12 +242,5 @@
                 ></a>
             </div>
         </footer>
-
-        <script src="js/admin.js"></script>
-        <script>
-            document.getElementById("view-products-btn").onclick = function () {
-                window.location.href = "products.html";
-            };
-        </script>
     </body>
 </html>

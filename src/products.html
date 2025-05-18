@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Products</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="banner">
-      <p class="banner-text">SHOP LTHLL SUMMER COLLECTION NOW!</p>
-    </div>
-    <header class="main-header">
-      <div class="logo">
-        <a href="index.html" class="logo-button">LTHLL</a>
-      </div>
-    </header>
-    <main class="page-wrapper">
-      <h2 style="text-align: center; margin-top: 2rem">All Products</h2>
-      <div
-        id="product-list"
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2rem;
-          justify-content: center;
-          margin: 2rem 0;
-        "
-      ></div>
-      <a
-        href="admin.html"
-        class="back-button"
-        style="margin: 2rem auto 0 auto; display: block; width: max-content"
-        >Back to Admin</a
-      >
-    </main>
-    <script>
-      fetch("http://localhost:3000/products")
-        .then((res) => res.json())
-        .then((products) => {
-          const list = document.getElementById("product-list");
-          if (products.length === 0) {
-            list.innerHTML = "<p>No products found.</p>";
-            return;
-          }
-          list.innerHTML = products
-            .map(
-              (p) => `
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>All Products</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="module" src="./main.js" defer></script>
+    </head>
+    <body>
+        <div class="banner">
+            <p class="banner-text">SHOP LTHLL SUMMER COLLECTION NOW!</p>
+        </div>
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html" class="logo-button">LTHLL</a>
+            </div>
+        </header>
+        <main class="page-wrapper">
+            <h2 style="text-align: center; margin-top: 2rem">All Products</h2>
+            <div
+                id="product-list"
+                style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    justify-content: center;
+                    margin: 2rem 0;
+                "
+            ></div>
+            <a
+                href="admin.html"
+                class="back-button"
+                style="
+                    margin: 2rem auto 0 auto;
+                    display: block;
+                    width: max-content;
+                "
+                >Back to Admin</a
+            >
+        </main>
+        <script>
+            fetch("http://localhost:3000/products")
+                .then((res) => res.json())
+                .then((products) => {
+                    const list = document.getElementById("product-list");
+                    if (products.length === 0) {
+                        list.innerHTML = "<p>No products found.</p>";
+                        return;
+                    }
+                    list.innerHTML = products
+                        .map(
+                            (p) => `
             <div class="product-card" style="width:120px;padding:0.7rem 0.5rem;min-width:0;max-width:120px;">
               <div class="product-images" style="width:100%;height:90px;display:flex;align-items:center;justify-content:center;">
                 <img src="${p.image1 || ""}" alt="${
-                p.name
-              }" style="width:100%;height:90px;object-fit:cover;border-radius:6px;background:#f4f4f4;"/>
+                                p.name
+                            }" style="width:100%;height:90px;object-fit:cover;border-radius:6px;background:#f4f4f4;"/>
               </div>
               <h2 style="font-size:0.85rem;margin:0.4rem 0 0.1rem 0;line-height:1.1;">${
-                p.name
+                  p.name
               }</h2>
               <p style="margin:0.1rem 0;font-size:0.7rem;">${p.category} | ${
-                p.department
-              }</p>
+                                p.department
+                            }</p>
               <p style="margin:0.1rem 0;font-size:0.7rem;">${p.brand}</p>
               <p style="margin:0.1rem 0;font-weight:bold;font-size:0.8rem;">$${
-                p.price
+                  p.price
               }</p>
             </div>
           `
-            )
-            .join("");
-        })
-        .catch(() => {
-          document.getElementById("product-list").innerHTML =
-            "<p>Failed to load products.</p>";
-        });
-    </script>
-  </body>
+                        )
+                        .join("");
+                })
+                .catch(() => {
+                    document.getElementById("product-list").innerHTML =
+                        "<p>Failed to load products.</p>";
+                });
+        </script>
+    </body>
 </html>

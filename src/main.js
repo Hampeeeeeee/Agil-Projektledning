@@ -1,7 +1,17 @@
+import { populateCategoryDropdown } from "./js/admin.js";
+
 const API_BASE = "http://localhost:3000";
 
-async function fetchProducts() {
+export async function fetchProducts() {
     const response = await fetch(`${API_BASE}/products`);
+    if (!response.ok) {
+        throw new Error("Network response was not ok");
+    }
+    return response.json();
+}
+
+export async function fetchCategories() {
+    const response = await fetch(`${API_BASE}/categories`);
     if (!response.ok) {
         throw new Error("Network response was not ok");
     }
@@ -25,7 +35,7 @@ function createProductCard(product) {
 }
 
 // Update the displayProducts function to handle direct category filtering without requiring a specific department page
-async function displayProducts() {
+export async function displayProducts() {
     const productContainer = document.getElementById("product-container");
     if (!productContainer) return; // Exit if container doesn't exist on this page
 
@@ -163,10 +173,12 @@ if (sliderImage) {
     }
 }
 
-const adminForm = document
-    .getElementById("admin-login-form")
-    .addEventListener("submit", (event) => {
-        event.preventDefault();
-        // Redirect to admin dashboard
-        window.location.href = "admin.html";
-    });
+const adminForm = document.getElementById("admin-login-form");
+adminForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    // Redirect to admin dashboard
+    window.location.href = "admin.html";
+});
+
+adminForm.reset();
+populateCategoryDropdown();
