@@ -23,9 +23,10 @@
     gap: 1rem;
 }
 
-.admin-page form label {
+.admin-page form, label {
     font-size: 0.9rem;
     font-weight: 400;
+    color: #fff;
 }
 
 .admin-page form input,
