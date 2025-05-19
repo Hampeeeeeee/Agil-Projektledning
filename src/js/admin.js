@@ -7,7 +7,7 @@ import {
 
 export function populateCategoryDropdown() {
     const categoryDropdown = document.getElementById("product-category");
-    if (!categoryDropdown) return; // Exit if element doesn't exist
+    if (!categoryDropdown) return;
 
     fetchCategories()
         .then((categories) => {
@@ -23,7 +23,6 @@ export function populateCategoryDropdown() {
         });
 }
 
-// Function to post product from admin page to backend
 async function postProduct(product) {
     try {
         const response = await fetch(`${API_BASE}/products`, {
@@ -122,11 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Render products added to the backend after 2025-05-19
-
 async function renderAdminProducts() {
     const productContainer = document.getElementById("view-admin-products");
-    if (!productContainer) return; // Exit if container doesn't exist
+    if (!productContainer) return;
 
     try {
         const products = await fetchProducts();
