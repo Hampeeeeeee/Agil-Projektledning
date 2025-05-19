@@ -379,15 +379,27 @@
         "timestamp": "2025-05-16T19:54:24.731Z"
     },
     {
-        "id": "69fb40d3-6560-4ffe-82e7-b3f82b1c7059",
-        "name": "szxdcfgvhbjn",
-        "brand": "wexcfvgbhnjmk",
-        "category": "erctvybunj",
-        "department": "men",
-        "price": 34567,
-        "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
+        "id": "4df6ec06-c1f7-45ea-85af-db9628bd7d83",
+        "name": "Court Graffik - Leather Shoes for Men",
+        "brand": "DC Shoes",
+        "category": "Shoes",
+        "department": "Men",
+        "price": 500,
+        "image1": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300529_dcshoes,p_ovs_frt1.jpg",
+        "image2": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300529_dcshoes,p_ovs_frt2.jpg",
+        "image3": "",
+        "timestamp": "2025-05-19T08:30:10.901Z"
+    },
+    {
+        "id": "0a90669e-bc1f-4ea4-bca4-c9d9116aebe2",
+        "name": "Skateboard-24/25, skateboard, nybörjare, unisex",
+        "brand": "FLARE",
+        "category": "Skateboards",
+        "department": "Unisex",
+        "price": 349,
+        "image1": "https://www.xxl.se/filespin/b1de9a54bf264ca4a1d2126f5d17ab15?quality=75&bgcolor=efefef&resize=1080%2C1080",
         "image2": "",
         "image3": "",
-        "timestamp": "2025-05-19T07:58:48.779Z"
+        "timestamp": "2025-05-19T08:34:12.841Z"
     }
 ]
