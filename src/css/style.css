@@ -23,7 +23,7 @@ body {
     flex-direction: column;
 }
 
-.page-wrapper h1{
+.page-wrapper h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,7 +193,7 @@ h6 {
     color: #fff;
 }
 
-.fa-user-lock{
+.fa-user-lock {
     border: none;
     margin-right: -20px;
 }
@@ -304,7 +304,7 @@ button {
 }
 
 .product-card {
-    background: #fff;
+    background: #2a7f91;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     padding: 1.5rem;
@@ -323,6 +323,7 @@ button {
 
 .product-card h2 {
     font-size: 1.2rem;
+    color: black;
     font-weight: 400;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -484,22 +485,21 @@ h2 {
 }
 /* Hover effect for image zoom */
 .box:hover .box-image img {
-  transform: scale(1.1); /* Slight zoom */
+    transform: scale(1.1); /* Slight zoom */
 }
 
 /* On hover: make text visible and slide up */
 .box:hover .image-text {
-  opacity: 1;
-  transform: translate(-50%, -50%); /* Maintain the text position */
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Maintain the text position */
 }
 
 /* Keep the text visible after the hover */
 .box-link:hover .box .image-text {
-  opacity: 1 !important; /* Force text visibility */
-  transform: translate(-50%, -50%) !important; /* Keep it centered */
-  pointer-events: auto; /* Enable text interaction */
+    opacity: 1 !important; /* Force text visibility */
+    transform: translate(-50%, -50%) !important; /* Keep it centered */
+    pointer-events: auto; /* Enable text interaction */
 }
-
 
 /* Admin Page Styling */
 .admin-page {
@@ -727,11 +727,12 @@ input[type="file"]::-webkit-file-upload-button:hover {
     background-color: #000;
 }
 
-#admin-login-form label, #admin-login-form h4{
+#admin-login-form label,
+#admin-login-form h4 {
     color: #000;
 }
 
-#admin-login-form{
+#admin-login-form {
     padding: 10px;
     margin-top: -20px;
     width: 80px;
