@@ -167,9 +167,11 @@
     font-family: var(--font-main);
     font-size: 0.9rem;
     border: 1px solid #afaeae;
-    background-color: rgb(190, 211, 221);
+    background-color: #fff;
     color: var(--text-color);
     transition: border-color 0.3s ease;
+    width: 526.95px;
+    margin-top: -20px;
 }
 
 .admin-form select:focus {
@@ -187,9 +189,10 @@
     font-family: monospace !important;
     font-size: 0.9rem;
     border: 1px solid #ccc;
-    background-color: transparent;
+    background-color: #fff;
     color: var(--text-color);
     transition: border-color 0.3s ease;
+    margin-top: -20px;
 }
 
 .admin-form input:focus {
@@ -229,7 +232,7 @@
     font-family: var(--font-main);
     font-size: 0.9rem;
     border: 1px solid #ccc;
-    background-color: transparent;
+    background-color: #fff;
     color: var(--text-color);
     transition: border-color 0.3s ease;
 }
