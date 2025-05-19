@@ -23,6 +23,12 @@ body {
     flex-direction: column;
 }
 
+.page-wrapper h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body {
     margin: 0;
     font-family: var(--font-main);
