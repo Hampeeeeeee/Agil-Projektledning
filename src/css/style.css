@@ -232,12 +232,13 @@ h6 {
     font-family: monospace;
     font-weight: 100;
     font-size: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     background-color: transparent;
 }
 
 .footer-col input::placeholder {
     font-family: var(--font-main);
+    color: black;
 }
 
 .footer-col button {
