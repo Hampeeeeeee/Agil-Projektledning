@@ -303,7 +303,7 @@ h6 {
   width: 100%;
   padding: 0.6rem 0.8rem;
   font-size: 0.9rem;
-  font-family: var(--font-main);
+  font-family: monospace;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: transparent;
@@ -314,9 +314,8 @@ h6 {
   height: auto;
 }
 
-.contact-form textarea {
-  height: 120px;
-}
+
+
 
 .contact-form input:focus,
 .contact-form textarea:focus {
