@@ -416,16 +416,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px 0;
     flex-wrap: wrap; /* Keeps it responsive on smaller screens */
     gap: 20px; /* Adds space between the boxes */
 }
 
 /* Individual Box */
 .box {
-    width: 350px; /* Set a fixed width for consistency */
-    height: 350px; /* Set a fixed height for consistency */
-    background-color: #fff;
+    width: 466.57px; /* Set a fixed width for consistency */
+    height: 466.75px; /* Set a fixed height for consistency */
     box-sizing: border-box; /* Ensures padding/border don't add to width */
     position: relative; /* So we can position text on top of the image */
     overflow: hidden; /* Ensures no image overflow */
