@@ -460,6 +460,24 @@ h2 {
     text-align: center; /* Optional: Center the text inside the div */
     width: 80%; /* Optional: Limit the width of the text box */
 }
+/* Hover effect for image zoom */
+.box:hover .box-image img {
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* On hover: make text visible and slide up */
+.box:hover .image-text {
+  opacity: 1;
+  transform: translate(-50%, -50%); /* Maintain the text position */
+}
+
+/* Keep the text visible after the hover */
+.box-link:hover .box .image-text {
+  opacity: 1 !important; /* Force text visibility */
+  transform: translate(-50%, -50%) !important; /* Keep it centered */
+  pointer-events: auto; /* Enable text interaction */
+}
+
 
 /* Admin Page Styling */
 .admin-page {
@@ -686,3 +704,4 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::-webkit-file-upload-button:hover {
     background-color: #000;
 }
+
