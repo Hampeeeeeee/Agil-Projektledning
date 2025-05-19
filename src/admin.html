@@ -15,7 +15,12 @@
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="./css/admin.css" />
-        <script type="module" src="./main.js" defer></script>
+        <script type="module">
+            // Import main.js which will detect we're on the admin page and load admin.js
+            import './main.js';
+            // Also directly import admin.js to ensure it's loaded
+            import './js/admin.js';
+        </script>
     </head>
     <body>
         <div class="banner">
@@ -129,18 +134,17 @@
                         required
                     />
 
-                    <label for="product-category">Category</label>
+                    <label for="product-category">Select Existing Category</label>
                     <select id="product-category" name="product-category">
                         <option value="">Choose a category</option>
                     </select>
 
-                    <label for="new-product-category"
-                        >Or Add New Category</label
-                    >
+                    <label for="new-product-category">OR Add New Category</label>
                     <input
                         type="text"
                         id="new-product-category"
                         name="new-product-category"
+                        placeholder="Enter a new category name"
                     />
 
                     <label for="product-department">Department</label>
@@ -171,12 +175,14 @@
                         type="url"
                         id="product-image2"
                         name="product-image2"
+                        required
                     />
                     <label for="product-image3">URL Product Image 3</label>
                     <input
                         type="url"
                         id="product-image3"
                         name="product-image3"
+                        required
                     />
 
                     <button type="submit">Add Product</button>
@@ -242,5 +248,25 @@
                 ></a>
             </div>
         </footer>
+        <script>
+            // Additional script to ensure admin.js is loaded and executed
+            document.addEventListener('DOMContentLoaded', () => {
+                console.log('DOM fully loaded on admin page');
+                // Check if populateCategoryDropdown is available in the global scope
+                if (typeof populateCategoryDropdown === 'function') {
+                    console.log('Calling populateCategoryDropdown directly');
+                    populateCategoryDropdown();
+                } else {
+                    console.log('populateCategoryDropdown not available in global scope');
+                    // Try to import it again
+                    import('./js/admin.js').then(module => {
+                        console.log('Admin module loaded again');
+                        if (module.populateCategoryDropdown) {
+                            module.populateCategoryDropdown();
+                        }
+                    });
+                }
+            });
+        </script>
     </body>
 </html>

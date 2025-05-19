@@ -10,11 +10,15 @@ export async function fetchProducts() {
 }
 
 export async function fetchCategories() {
+  console.log("Fetching categories from:", `${API_BASE}/categories`)
   const response = await fetch(`${API_BASE}/categories`)
   if (!response.ok) {
+    console.error("Failed to fetch categories:", response.status, response.statusText)
     throw new Error("Network response was not ok")
   }
-  return response.json()
+  const data = await response.json()
+  console.log("Categories data:", data)
+  return data
 }
 
 function createProductCard(product) {
@@ -170,6 +174,20 @@ if (adminForm) {
     window.location.href = "admin.html"
   })
   adminForm.reset()
+}
+
+// Check if we need to initialize admin functionality
+const isAdminPage = window.location.pathname.includes("admin.html")
+if (isAdminPage) {
+  // Import admin.js dynamically to avoid circular dependencies
+  import("./js/admin.js")
+    .then((adminModule) => {
+      console.log("Admin module loaded")
+      // The admin module will initialize itself
+    })
+    .catch((err) => {
+      console.error("Failed to load admin module:", err)
+    })
 }
 
 // Export API_BASE for use in other modules
