@@ -82,8 +82,14 @@ h6 {
 
 /* Logo */
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     font-weight: 400;
+}
+
+#logo {
+    width: 100px;
 }
 
 .logo-button {
