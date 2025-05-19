@@ -10,7 +10,6 @@
 
 html,
 body {
-    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -36,6 +35,10 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-weight: 100;
+}
+
+body {
+    background: linear-gradient(to bottom, #000 0%, #263c5f 100%);
 }
 
 a[aria-current="page"] {
