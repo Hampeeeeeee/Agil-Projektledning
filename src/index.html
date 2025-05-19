@@ -116,6 +116,28 @@
                     </div>
                 </nav>
                 <div class="header-icons">
+                    <div class="dropdown">
+                        <i class="fa-solid fa-user-lock dropdown-button" id="admin"></i>
+                        <div class="dropdown-content admin"> 
+                            <form id="admin-login-form">
+                                <h4>Admin login</h4>
+                                <label for="admin-Username">Username:</label>
+                                <input
+                                    type="text"
+                                    id="admin-name"
+                                    placeholder="Username"
+                                />
+                                <label for="admin-password">Password:</label>
+                                <input
+                                    type="password"
+                                    id="admin-password"
+                                    placeholder="Password"
+                                />
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+
                     <i class="bi bi-search" title="Search"></i>
                     <span class="stores" title="Find a Store">Stores</span>
                     <i class="bi bi-heart" title="Wishlist"></i>
@@ -185,21 +207,6 @@
                     <p>+1 (844) 326-6000</p>
                     <p>Email Us</p>
                     <p>Mon–Fri 9am–3pm PT</p>
-                    <h4>Admin login</h4>
-                    <form id="admin-login-form">
-                        <input
-                            type="text"
-                            id="admin-name"
-                            placeholder="Enter your name"
-                        />
-                        <label for="admin-password">Password:</label>
-                        <input
-                            type="password"
-                            id="admin-password"
-                            placeholder="Enter your password"
-                        />
-                        <button type="submit">Login</button>
-                    </form>
                 </div>
 
                 <div class="footer-col">
