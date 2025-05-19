@@ -223,6 +223,10 @@ h6 {
     max-width: 220px;
 }
 
+.footer-col a:visited {
+    color: var(--text-color);
+}
+
 .footer-col h4 {
     font-weight: 400;
     font-size: 0.85rem;
