@@ -4,11 +4,8 @@ export function populateCategoryDropdown() {
     const categoryDropdown = document.getElementById("product-category");
     if (!categoryDropdown) return; // Exit if element doesn't exist
 
-    console.log("Populating category dropdown...");
-
     fetchCategories()
         .then((categories) => {
-            console.log("Categories fetched:", categories);
             categories.forEach((category) => {
                 const option = document.createElement("option");
                 option.value = category;
@@ -37,7 +34,6 @@ async function postProduct(product) {
         }
 
         const data = await response.json();
-        console.log("Product added:", data);
         alert("Product added successfully!");
         document.getElementById("admin-form").reset();
         // Refresh the category dropdown after adding a product with potentially a new category
@@ -50,9 +46,7 @@ async function postProduct(product) {
 
 // Initialize admin functionality only if we're on the admin page
 document.addEventListener("DOMContentLoaded", () => {
-    // Check if we're on the admin page by looking for the admin form
     const productForm = document.getElementById("admin-form");
-    console.log("Admin form found:", !!productForm);
 
     if (productForm) {
         // We're on the admin page, initialize admin functionality
@@ -91,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             };
 
             postProduct(product);
+            productForm.reset();
         });
 
         // Add event listeners for the category fields
@@ -120,5 +115,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
-
-productForm.reset();
