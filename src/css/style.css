@@ -237,6 +237,10 @@ h6 {
     background-color: transparent;
 }
 
+.footer-col input::placeholder {
+    font-family: var(--font-main);
+}
+
 .footer-col button {
     background-color: #444;
     color: white;
