@@ -401,5 +401,17 @@
         "image2": "",
         "image3": "",
         "timestamp": "2025-05-19T08:34:12.841Z"
+    },
+    {
+        "id": "a1e7d3f8-b4c6-402d-9db8-520c696c861e",
+        "name": "Court Graffik - Leather Shoes for Women",
+        "brand": "DC Shoes",
+        "category": "Shoes",
+        "department": "Women",
+        "price": 999,
+        "image1": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300678_dcshoes,p_bwp_frt2.jpg",
+        "image2": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300678_dcshoes,p_bwp_frt3.jpg",
+        "image3": "",
+        "timestamp": "2025-05-19T19:01:12.808Z"
     }
 ]
