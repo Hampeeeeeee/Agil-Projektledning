@@ -23,7 +23,8 @@
     gap: 1rem;
 }
 
-.admin-page form, label {
+.admin-page form,
+label {
     font-size: 0.9rem;
     font-weight: 400;
     color: #fff;
@@ -299,4 +300,9 @@ input[type="file"]::-webkit-file-upload-button {
 
 input[type="file"]::-webkit-file-upload-button:hover {
     background-color: #000;
+}
+
+#view-products-btn {
+    width: 100%;
+    text-align: center;
 }

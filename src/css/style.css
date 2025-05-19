@@ -304,7 +304,8 @@ button {
 }
 
 /* Product Card Styles */
-#product-container {
+#product-container,
+#view-admin-products {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;

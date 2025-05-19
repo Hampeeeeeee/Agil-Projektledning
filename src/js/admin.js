@@ -1,4 +1,9 @@
-import { fetchCategories, API_BASE } from "../main.js";
+import {
+    fetchCategories,
+    API_BASE,
+    fetchProducts,
+    createProductCard,
+} from "../main.js";
 
 export function populateCategoryDropdown() {
     const categoryDropdown = document.getElementById("product-category");
@@ -51,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (productForm) {
         // We're on the admin page, initialize admin functionality
         populateCategoryDropdown();
+        renderAdminProducts();
 
         productForm.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -115,3 +121,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+// Render products added to the backend after 2025-05-19
+
+async function renderAdminProducts() {
+    const productContainer = document.getElementById("view-admin-products");
+    if (!productContainer) return; // Exit if container doesn't exist
+
+    try {
+        const products = await fetchProducts();
+        const filteredProducts = products.filter((product) => {
+            const timestamp = new Date(product.timestamp);
+            return timestamp >= new Date("2025-05-18");
+        });
+
+        filteredProducts.forEach((product) => {
+            const card = createProductCard(product);
+            productContainer.appendChild(card);
+        });
+    } catch (error) {
+        console.error("Error fetching products:", error);
+    }
+}

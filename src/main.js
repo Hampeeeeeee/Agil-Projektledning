@@ -23,7 +23,7 @@ export async function fetchCategories() {
     return data;
 }
 
-function createProductCard(product) {
+export function createProductCard(product) {
     const card = document.createElement("div");
     card.className = "product-card";
     card.innerHTML = `
