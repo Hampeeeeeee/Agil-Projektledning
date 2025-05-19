@@ -2,7 +2,7 @@
 @import url("/src/css/admin.css");
 
 :root {
-    --bg-color: #cdd9e4;
+    --bg-color: #3a5c91;
     --button-color: #000; /* Change button color to black to match contact form */
     --text-color: #000000;
     --font-main: "Bebas Neue", monospace;
@@ -75,7 +75,6 @@ h6 {
     align-items: center;
     background-color: var(--bg-color);
     padding: 1rem 2rem;
-    border-bottom: 1px solid #ccc;
 }
 
 /* Logo */
@@ -117,7 +116,7 @@ h6 {
 .dropdown-button {
     background-color: var(--bg-color);
     color: var(--text-color);
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     padding: 0.5rem 1rem;
     font-family: var(--font-main);
     font-size: 1rem;
@@ -420,7 +419,6 @@ h2 {
     width: 350px; /* Set a fixed width for consistency */
     height: 350px; /* Set a fixed height for consistency */
     background-color: #fff;
-    border: 1px solid #ececec;
     box-sizing: border-box; /* Ensures padding/border don't add to width */
     position: relative; /* So we can position text on top of the image */
     overflow: hidden; /* Ensures no image overflow */
