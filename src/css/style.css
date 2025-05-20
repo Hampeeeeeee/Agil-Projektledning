@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap");
 @import url("/src/css/admin.css");
+@import url("/src/css/contact.css");
 
 :root {
     --bg-color: #263c5f;
