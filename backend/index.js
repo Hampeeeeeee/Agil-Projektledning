@@ -59,6 +59,40 @@ async function editProduct(id, updatedProduct) {
     }
 }
 
+async function getMessages() {
+    try {
+        const data = await fs.readFile(
+            path.join(__dirname, "messages.json"),
+            "utf-8"
+        );
+        return JSON.parse(data);
+    } catch (error) {
+        console.error("Error reading messages file:", error);
+        return [];
+    }
+}
+
+async function postMessage(newMessage) {
+    try {
+        const messages = await getMessages();
+        const messageWithIdAndTimestamp = {
+            id: uuidv4(),
+            ...newMessage,
+            timestamp: new Date().toISOString(),
+        };
+        messages.push(messageWithIdAndTimestamp);
+        await fs.writeFile(
+            path.join(__dirname, "messages.json"),
+            JSON.stringify(messages, null, 4),
+            "utf-8"
+        );
+        return messageWithIdAndTimestamp;
+    } catch (error) {
+        console.error("Error posting message:", error);
+        throw error;
+    }
+}
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -94,6 +128,16 @@ app.get("/products/:id", async (req, res) => {
     }
 });
 
+app.get("/messages", async (req, res) => {
+    try {
+        const messages = await getMessages();
+        res.json(messages);
+    } catch (error) {
+        console.error("Error fetching messages:", error);
+        res.status(500).json({ error: "Failed to fetch messages" });
+    }
+});
+
 app.post("/products", async (req, res) => {
     try {
         const products = await getProducts();
@@ -112,6 +156,17 @@ app.post("/products", async (req, res) => {
     } catch (error) {
         console.error("Error adding product:", error);
         res.status(500).json({ error: "Failed to add product" });
+    }
+});
+
+app.post("/messages", async (req, res) => {
+    const newMessage = req.body;
+    try {
+        const message = await postMessage(newMessage);
+        res.status(201).json(message);
+    } catch (error) {
+        console.error("Error posting message:", error);
+        res.status(500).json({ error: "Failed to post message" });
     }
 });
 
