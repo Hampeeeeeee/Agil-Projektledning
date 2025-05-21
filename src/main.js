@@ -31,17 +31,20 @@ export function createProductCard(product) {
     <p>${product.category}</p>
     <p>Stock: ${product.stock} st</p>
     <p>Price: ${product.price} kr</p>
-    <p>Add to wishlist: 
-    <button id="wishlistBtn" title="Wishlist">
+    <p class="wishlist-text">
+  <span class="wishlist-label">Add to wishlist:</span>
+  <button id="wishlistBtn" title="Wishlist">
     <i id="wishlistBtnIcon">♥</i>
-    </button>
-    </p>
+  </button>
+  </p>
 `
   const wishlistBtn = card.querySelector('#wishlistBtn');
   const icon = card.querySelector('#wishlistBtnIcon');
+  const label = card.querySelector('.wishlist-label')
 
   wishlistBtn.addEventListener('click', () => {
-  icon.classList.toggle('filled-heart');
+  const isFilled = icon.classList.toggle('filled-heart');
+  label.textContent = isFilled ? 'Added to wishlist' : 'Add to wishlist:';
 });
 
   return card
