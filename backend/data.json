@@ -5,11 +5,12 @@
         "brand": "SWEET SKTBS",
         "category": "T-shirt",
         "department": "Men",
-        "price": 300,
+        "price": 299,
         "stock": 10,
-        "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
-        "image2": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_b_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
-        "timestamp": "2025-03-16T17:26:04.498Z"
+        "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
+        "image2": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_b_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
+        "timestamp": "2025-03-16T17:26:04.498Z",
+        "image3": ""
     },
     {
         "id": "f9c0ef6e-2c7f-477b-9580-efcfe7c8ee78",
@@ -156,10 +157,12 @@
         "brand": "Urban Classics",
         "category": "T-shirt",
         "department": "Women",
-        "price": 250,
+        "price": 249,
         "stock": 20,
         "image1": "https://img01.ztat.net/article/spp-media-p1/5c049da8f70b44eba11d342e04befacc/91d13ec1d0a54ef5b9d61c2b0f06d8f8.jpg?imwidth=1800&filter=packshot",
-        "timestamp": "2024-12-16T13:24:41.896Z"
+        "timestamp": "2024-12-16T13:24:41.896Z",
+        "image2": "",
+        "image3": ""
     },
     {
         "id": "566ae118-3755-4f5d-badd-f6e45e7e47ce",

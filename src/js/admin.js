@@ -193,6 +193,8 @@ function createAdminProductCard(product) {
     card.appendChild(price);
     card.appendChild(stock);
 
+    card.onclick = () => showAdminEditProductPopup(product);
+
     return card;
 }
 
@@ -226,6 +228,77 @@ async function renderAllProductsByDepartment() {
     } catch (error) {
         console.error("Error fetching products:", error);
     }
+}
+
+function showAdminEditProductPopup(product) {
+    // Overlay
+    const overlay = document.createElement("div");
+    overlay.className = "product-popup-overlay";
+
+    // Popup
+    const popup = document.createElement("div");
+    popup.className = "product-popup";
+
+    // Close button
+    const closeBtn = document.createElement("button");
+    closeBtn.className = "popup-close";
+    closeBtn.innerHTML = "×";
+    closeBtn.onclick = () => {
+        overlay.classList.remove("active");
+        setTimeout(() => document.body.removeChild(overlay), 300);
+    };
+
+    // Form
+    const form = document.createElement("form");
+    form.className = "popup-content admin-edit-form";
+    form.innerHTML = `
+        <div class="form-row"><label>Name:<input type="text" name="name" value="${
+            product.name
+        }" required></label></div>
+        <div class="form-row"><label>Brand:<input type="text" name="brand" value="${
+            product.brand
+        }" required></label></div>
+        <div class="form-row"><label>Category:<input type="text" name="category" value="${
+            product.category
+        }" required></label></div>
+        <div class="form-row"><label>Department:<input type="text" name="department" value="${
+            product.department
+        }" required></label></div>
+        <div class="form-row"><label>Price:<input type="number" name="price" value="${
+            product.price
+        }" required></label></div>
+        <div class="form-row"><label>Stock:<input type="number" name="stock" value="${
+            product.stock
+        }" required></label></div>
+        <div class="form-row"><label>Image 1:<input type="url" name="image1" value="${
+            product.image1
+        }" required></label></div>
+        <div class="form-row"><label>Image 2:<input type="url" name="image2" value="${
+            product.image2 || ""
+        }"></label></div>
+        <div class="form-row"><label>Image 3:<input type="url" name="image3" value="${
+            product.image3 || ""
+        }"></label></div>
+        <div class="form-row"><button type="submit">Save</button></div>
+    `;
+
+    form.onsubmit = async (e) => {
+        e.preventDefault();
+        const updatedProduct = Object.fromEntries(new FormData(form).entries());
+        updatedProduct.price = parseFloat(updatedProduct.price);
+        updatedProduct.stock = parseInt(updatedProduct.stock);
+        await editProduct(product.id, updatedProduct);
+        overlay.classList.remove("active");
+        setTimeout(() => document.body.removeChild(overlay), 300);
+        // Optionally refresh product list here
+    };
+
+    popup.appendChild(closeBtn);
+    popup.appendChild(form);
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+    void overlay.offsetWidth;
+    overlay.classList.add("active");
 }
 
 renderAllProductsByDepartment();
