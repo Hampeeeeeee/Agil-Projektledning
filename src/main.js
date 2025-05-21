@@ -34,13 +34,13 @@ export function createProductCard(product) {
     <p>Price: ${product.price} kr</p>
     <p class="wishlist-text">
   <span class="wishlist-label">Add to wishlist:</span>
-  <button id="wishlistBtn" title="Wishlist">
-    <i id="wishlistBtnIcon">♥</i>
+  <button id="addToWishlistBtn" title="Wishlist">
+    <i id="addToWishlistBtnIcon">♥</i>
   </button>
   </p>
 `
-  const wishlistBtn = card.querySelector('#wishlistBtn');
-  const icon = card.querySelector('#wishlistBtnIcon');
+  const wishlistBtn = card.querySelector('#addToWishlistBtn');
+  const icon = card.querySelector('#addToWishlistBtnIcon');
   const label = card.querySelector('.wishlist-label')
 
   wishlistBtn.addEventListener('click', (e) => {

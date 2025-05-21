@@ -278,18 +278,18 @@ button {
     cursor: pointer;
 }
 
-#wishlistBtn {
+#addToWishlistBtn {
     background-color: transparent;
 }
 
-#wishlistBtnIcon {
+#addToWishlistBtnIcon {
     display: flex;
     justify-content: start;
     background-color: transparent;
     font-size: 30px;
 }
 
-#wishlistBtnIcon:hover {
+#addToWishlistBtnIcon:hover {
     transform: scale(1.2);
     color: rgb(170, 0, 0);
     transition: transform 0.5s, color 0.5s;
