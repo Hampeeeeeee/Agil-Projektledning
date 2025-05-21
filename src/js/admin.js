@@ -143,3 +143,70 @@ async function renderAdminProducts() {
         console.error("Error fetching products:", error);
     }
 }
+
+// Function that creates small product cards for all products on the admin page
+
+function createAdminProductCard(product) {
+    const card = document.createElement("div");
+    card.className = "admin-product-card";
+
+    const img = document.createElement("img");
+    img.src = product.image1;
+    img.alt = product.name;
+
+    const name = document.createElement("h4");
+    name.textContent = product.name;
+
+    const brand = document.createElement("p");
+    brand.textContent = `Brand: ${product.brand}`;
+
+    const price = document.createElement("p");
+    price.textContent = `Price: ${product.price} kr`;
+
+    const stock = document.createElement("p");
+    stock.textContent = `Stock: ${product.stock}`;
+
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(brand);
+    card.appendChild(price);
+    card.appendChild(stock);
+
+    return card;
+}
+
+// Function that renders all products on the admin page
+async function renderAllProductsByDepartment() {
+    const productContainer = document.getElementById("edit-products");
+    if (!productContainer) return;
+
+    try {
+        const products = await fetchProducts();
+        const departments = [...new Set(products.map((p) => p.department))];
+
+        // Show all products by department
+        departments.forEach((department) => {
+            const departmentProducts = products.filter(
+                (product) => product.department === department
+            );
+
+            const departmentSection = document.createElement("div");
+            departmentSection.className = "department-section";
+
+            const departmentTitle = document.createElement("h3");
+            departmentTitle.textContent = department;
+            departmentSection.appendChild(departmentTitle);
+
+            departmentProducts.forEach((product) => {
+                const card = createAdminProductCard(product);
+                departmentSection.appendChild(card);
+            });
+
+            productContainer.appendChild(departmentSection);
+        });
+    } catch (error) {
+        console.error("Error fetching products:", error);
+    }
+}
+
+renderAllProductsByDepartment();
