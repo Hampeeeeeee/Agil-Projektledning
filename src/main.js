@@ -29,6 +29,7 @@ export function createProductCard(product) {
     <p>Department: ${product.department}</p>
     <p>Brand: ${product.brand}</p>
     <p>${product.category}</p>
+    <p>Stock: ${product.stock} st</p>
     <p>Price: ${product.price} kr</p>
 `
   return card

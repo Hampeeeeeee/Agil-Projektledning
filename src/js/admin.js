@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 price: Number.parseFloat(
                     document.getElementById("product-price").value
                 ),
+                stock: Number.parseInt(
+                    document.getElementById("product-stock").value
+                ),
                 image1: document.getElementById("product-image1").value,
                 image2: document.getElementById("product-image2").value || "",
                 image3: document.getElementById("product-image3").value || "",
