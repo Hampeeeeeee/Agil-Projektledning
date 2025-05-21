@@ -21,6 +21,30 @@ async function getProducts() {
     }
 }
 
+async function editProduct(id, updatedProduct) {
+    try {
+        const products = await getProducts();
+        const productIndex = products.findIndex((p) => p.id === id);
+        if (productIndex !== -1) {
+            products[productIndex] = {
+                ...products[productIndex],
+                ...updatedProduct,
+            };
+            await fs.writeFile(
+                path.join(__dirname, "data.json"),
+                JSON.stringify(products, null, 4),
+                "utf-8"
+            );
+            return products[productIndex];
+        } else {
+            throw new Error("Product not found");
+        }
+    } catch (error) {
+        console.error("Error editing product:", error);
+        throw error;
+    }
+}
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -63,6 +87,19 @@ app.post("/products", async (req, res) => {
     } catch (error) {
         console.error("Error adding product:", error);
         res.status(500).json({ error: "Failed to add product" });
+    }
+});
+
+app.put("/products/:id", async (req, res) => {
+    const { id } = req.params;
+    const updatedProduct = req.body;
+
+    try {
+        const product = await editProduct(id, updatedProduct);
+        res.json(product);
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
     }
 });
 
