@@ -1,5 +1,4 @@
 const API_BASE = "http://localhost:3000"
-
 import { showProductPopup } from "./js/product-popup.js"
 
 export async function fetchProducts() {
@@ -40,18 +39,25 @@ export function createProductCard(product) {
   </button>
   </p>
 `
-  const wishlistBtn = card.querySelector("#wishlistBtn")
-  const icon = card.querySelector("#wishlistBtnIcon")
-  const label = card.querySelector(".wishlist-label")
+  const wishlistBtn = card.querySelector('#wishlistBtn');
+  const icon = card.querySelector('#wishlistBtnIcon');
+  const label = card.querySelector('.wishlist-label')
 
-  wishlistBtn.addEventListener("click", (e) => {
-    e.stopPropagation() // Prevent triggering the card click
-    const isFilled = icon.classList.toggle("filled-heart")
-    label.textContent = isFilled ? "Added to wishlist" : "Add to wishlist:"
-  })
+  wishlistBtn.addEventListener('click', (e) => {
+    e.stopPropagation() 
+    const isFilled = icon.classList.toggle('filled-heart');
+    label.textContent = isFilled ? 'Added to wishlist' : 'Add to wishlist:';
 
-  // Add click event to show popup
-  card.addEventListener("click", () => {
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    if (isFilled) {
+      wishlist.push(product);
+    } else {
+      wishlist = wishlist.filter(p => p.id !== product.id);
+    }
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+});
+
+card.addEventListener("click", () => {
     showProductPopup(product)
   })
 
@@ -115,7 +121,7 @@ export async function displayProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Import the CSS for the product popup
+    // Import the CSS for the product popup
   const link = document.createElement("link")
   link.rel = "stylesheet"
   link.href = "./css/product-popup.css"
