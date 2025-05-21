@@ -23,6 +23,29 @@ export function populateCategoryDropdown() {
         });
 }
 
+async function editProduct(productId, updatedProduct) {
+    try {
+        const response = await fetch(`${API_BASE}/products/${productId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedProduct),
+        });
+
+        if (!response.ok) {
+            throw new Error("Failed to update product");
+        }
+
+        const data = await response.json();
+        alert("Product updated successfully!");
+        return data;
+    } catch (error) {
+        console.error("Error updating product:", error);
+        alert("Error updating product: " + error.message);
+    }
+}
+
 async function postProduct(product) {
     try {
         const response = await fetch(`${API_BASE}/products`, {
@@ -144,8 +167,6 @@ async function renderAdminProducts() {
     }
 }
 
-// Function that creates small product cards for all products on the admin page
-
 function createAdminProductCard(product) {
     const card = document.createElement("div");
     card.className = "admin-product-card";
@@ -175,7 +196,6 @@ function createAdminProductCard(product) {
     return card;
 }
 
-// Function that renders all products on the admin page
 async function renderAllProductsByDepartment() {
     const productContainer = document.getElementById("edit-products");
     if (!productContainer) return;
@@ -184,7 +204,6 @@ async function renderAllProductsByDepartment() {
         const products = await fetchProducts();
         const departments = [...new Set(products.map((p) => p.department))];
 
-        // Show all products by department
         departments.forEach((department) => {
             const departmentProducts = products.filter(
                 (product) => product.department === department
