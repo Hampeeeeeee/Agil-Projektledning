@@ -286,7 +286,7 @@ button {
     display: flex;
     justify-content: start;
     background-color: transparent;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #wishlistBtnIcon:hover {
