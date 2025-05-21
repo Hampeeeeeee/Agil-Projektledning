@@ -75,10 +75,12 @@ h6 {
 
 /* Header */
 .main-header {
+    background-image: url(https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=1200);
+    background-size: 110%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to left, #263c5f 30%, #2a7f91 70%);
+    /* background: linear-gradient(to left, #263c5f 30%, #2a7f91 70%); */
     padding: 1rem 2rem;
     border-bottom: 3px solid #000;
     margin-bottom: 30px;
