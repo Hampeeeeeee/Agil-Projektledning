@@ -278,6 +278,27 @@ button {
     cursor: pointer;
 }
 
+#wishlistBtn {
+    background-color: transparent;
+}
+
+#wishlistBtnIcon {
+    display: flex;
+    justify-content: start;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+#wishlistBtnIcon:hover {
+    transform: scale(1.2);
+    color: rgb(170, 0, 0);
+    transition: transform 0.5s, color 0.5s;
+}
+
+.filled-heart {
+    color: rgb(170, 0, 0);
+}
+
 .footer-col .legal {
     font-size: 0.65rem;
     color: var(--text-color);
