@@ -497,12 +497,21 @@ h2 {
 /* Hover effect for image zoom */
 .box:hover .box-image img {
     transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 4px 24px rgba(34, 48, 69, 0.15);
+    transform: translateY(-7px);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
+
+
 
 /* On hover: make text visible and slide up */
 .box:hover .image-text {
     opacity: 1;
     transform: translate(-50%, -50%); /* Maintain the text position */
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 4px 24px rgba(34, 48, 69, 0.15);
+    transform: translateY(-7px);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 /* Keep the text visible after the hover */
@@ -510,6 +519,10 @@ h2 {
     opacity: 1 !important; /* Force text visibility */
     transform: translate(-50%, -50%) !important; /* Keep it centered */
     pointer-events: auto; /* Enable text interaction */
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 4px 24px rgba(34, 48, 69, 0.15);
+    transform: translateY(-7px);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 /* Admin Page Styling */
