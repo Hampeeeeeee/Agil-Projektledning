@@ -1,4 +1,5 @@
 const API_BASE = "http://localhost:3000"
+import { showProductPopup } from "./product-popup.js"
 
 async function fetchLatestProducts(limit = 8) {
   try {
@@ -92,8 +93,7 @@ function addProductToSlider(product, container, isClone = false, cloneId = null,
       newTag.className = "product-tag new"
       newTag.textContent = "NEW"
       slideWrapper.appendChild(newTag)
-    }
-    else if (isLatestProduct(product, allProducts)) {
+    } else if (isLatestProduct(product, allProducts)) {
       const latestTag = document.createElement("div")
       latestTag.className = "product-tag latest"
       latestTag.textContent = "LATEST"
@@ -123,8 +123,10 @@ function addProductToSlider(product, container, isClone = false, cloneId = null,
   slideWrapper.appendChild(productInfo)
 
   if (!isClone) {
-    slideWrapper.addEventListener("click", () => {
-      window.location.href = `${product.department.toLowerCase()}.html?department=${product.department}&category=${product.category}`
+    slideWrapper.addEventListener("click", (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+      showProductPopup(product)
     })
     slideWrapper.style.cursor = "pointer"
   }
@@ -143,9 +145,8 @@ function initSliderControls() {
   const nextBtn = document.querySelector("#nextBtn")
 
   const containerWidth = document.querySelector(".img_slider").clientWidth
-  const cardWidth = sliderProducts[0].offsetWidth + 20 
+  const cardWidth = sliderProducts[0].offsetWidth + 20
   const visibleCards = Math.floor(containerWidth / cardWidth)
-
 
   let counter = 2
 
@@ -215,7 +216,7 @@ function initSliderControls() {
       counter = 2
       sliderImage.style.transform = `translateX(${-counter * cardWidth}px)`
 
-      void sliderImage.offsetWidth 
+      void sliderImage.offsetWidth
 
       moveToNextSlide()
     } else {
@@ -262,7 +263,7 @@ function initSliderControls() {
   // Handle window resize to prevent layout shifts
   window.addEventListener("resize", () => {
     const newContainerWidth = document.querySelector(".img_slider").clientWidth
-    const newCardWidth = sliderProducts[0].offsetWidth + 20 
+    const newCardWidth = sliderProducts[0].offsetWidth + 20
 
     sliderImage.style.transition = "none"
     sliderImage.style.transform = `translateX(${-counter * newCardWidth}px)`
