@@ -1,5 +1,7 @@
 const API_BASE = "http://localhost:3000"
 
+import { showProductPopup } from "./js/product-popup.js"
+
 export async function fetchProducts() {
   const response = await fetch(`${API_BASE}/products`)
   if (!response.ok) {
@@ -38,14 +40,20 @@ export function createProductCard(product) {
   </button>
   </p>
 `
-  const wishlistBtn = card.querySelector('#wishlistBtn');
-  const icon = card.querySelector('#wishlistBtnIcon');
-  const label = card.querySelector('.wishlist-label')
+  const wishlistBtn = card.querySelector("#wishlistBtn")
+  const icon = card.querySelector("#wishlistBtnIcon")
+  const label = card.querySelector(".wishlist-label")
 
-  wishlistBtn.addEventListener('click', () => {
-  const isFilled = icon.classList.toggle('filled-heart');
-  label.textContent = isFilled ? 'Added to wishlist' : 'Add to wishlist:';
-});
+  wishlistBtn.addEventListener("click", (e) => {
+    e.stopPropagation() // Prevent triggering the card click
+    const isFilled = icon.classList.toggle("filled-heart")
+    label.textContent = isFilled ? "Added to wishlist" : "Add to wishlist:"
+  })
+
+  // Add click event to show popup
+  card.addEventListener("click", () => {
+    showProductPopup(product)
+  })
 
   return card
 }
@@ -107,6 +115,12 @@ export async function displayProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Import the CSS for the product popup
+  const link = document.createElement("link")
+  link.rel = "stylesheet"
+  link.href = "./css/product-popup.css"
+  document.head.appendChild(link)
+
   displayProducts()
 
   const adminForm = document.getElementById("admin-login-form")
