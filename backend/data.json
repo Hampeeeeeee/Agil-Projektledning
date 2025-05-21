@@ -6,6 +6,7 @@
         "category": "T-shirt",
         "department": "Men",
         "price": 300,
+        "stock": 10,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_f_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
         "image2": "https://junkyard.imgix.net/globalassets/productimages/7364994_900_b_f_sweetsktbs_sweetlooseteeeyes2410_q1_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60 ",
         "timestamp": "2025-03-16T17:26:04.498Z"
@@ -17,6 +18,7 @@
         "category": "T-shirt",
         "department": "Men",
         "price": 350,
+        "stock": 5,
         "image1": "https://static.skatepro.com/product/1800/spitfire-classic-87-swirl-t-shirt-65.webp",
         "image2": "https://cdn.skatepro.com/product/520/spitfire-classic-87-swirl-t-shirt-3.webp",
         "timestamp": "2024-11-23T22:35:16.104Z"
@@ -28,6 +30,7 @@
         "category": "Sweatshirt",
         "department": "Men",
         "price": 800,
+        "stock": 8,
         "image1": "https://cdn.skatepro.com/product/520/santa-cruz-screaming-scratched-hand-strip-is.webp",
         "timestamp": "2025-03-16T01:21:31.836Z"
     },
@@ -38,6 +41,7 @@
         "category": "Sweatshirt",
         "department": "Men",
         "price": 700,
+        "stock": 12,
         "image1": "https://se.passenger-clothing.com/cdn/shop/files/hDzIS4f1c5tj2dG_w_rftc0EBxbNPIPdaewmaySQS_4.jpg?v=1742379089&width=713",
         "image2": "https://se.passenger-clothing.com/cdn/shop/files/UcaNRfsmGy9Mav0bPTaXKUPVGEndJWv1EvDY5_5bQS8.jpg?v=1742379089&width=713",
         "timestamp": "2025-04-24T22:35:43.770Z"
@@ -49,6 +53,7 @@
         "category": "Hoodies",
         "department": "Men",
         "price": 1000,
+        "stock": 7,
         "image1": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2Fbb%2F55%2Fa6%2F65%2F65a655bbf039b9ec8df6be04%2Fhoodie-poetic-collective-cloud-brown.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
         "image2": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2Fba%2F55%2Fa6%2F65%2F65a655baf039b9ec8df6be03%2Fhoodie-poetic-collective-cloud-brown-back.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
         "timestamp": "2025-02-19T09:09:20.922Z"
@@ -60,6 +65,7 @@
         "category": "Hoodies",
         "department": "Men",
         "price": 600,
+        "stock": 6,
         "image1": "https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw9cf839d9/images/5/3/1/1/531179a.jpg?sfrm=png",
         "timestamp": "2025-01-25T01:39:50.984Z"
     },
@@ -70,6 +76,7 @@
         "category": "Pants",
         "department": "Men",
         "price": 1400,
+        "stock": 4,
         "image1": "https://img01.ztat.net/article/spp-media-p1/7c3b28df4b214e20b89f5a614d7c6621/b4e46458706048c88ca17d11013da5d9.jpg?imwidth=1800&filter=packshot",
         "timestamp": "2025-03-11T16:56:13.839Z"
     },
@@ -80,6 +87,7 @@
         "category": "Pants",
         "department": "Men",
         "price": 500,
+        "stock": 0,
         "image1": "https://img01.ztat.net/article/spp-media-p1/80900d8f463949349ac29119a5e94912/941767a7473348f9b32482a624f1a899.jpg?imwidth=156&filter=packshot",
         "timestamp": "2025-03-10T23:19:18.058Z"
     },
@@ -90,6 +98,7 @@
         "category": "Jeans",
         "department": "Men",
         "price": 1100,
+        "stock": 2,
         "image1": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2F89%2Fcd%2F3c%2F67%2F673ccd8969830efae7063f14%2Fyardsale-jeans-phantasy-black-back_0zgwdr.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
         "image2": "https://www.streetworld.com/_next/image?url=https%3A%2F%2Ffiles.plytix.com%2Fapi%2Fv1.1%2Ffile%2Fpublic_files%2Fpim%2Fassets%2Ffc%2Fd1%2F5e%2F62%2F625ed1fc964c24ca3f02afe1%2Fimages%2F89%2Fcd%2F3c%2F67%2F673ccd8969830efae7063f14%2Fyardsale-jeans-phantasy-black-back_0zgwdr.jpg%3Fauto%3Dformat%26px%3D0%26htn%3D0&w=1080&q=100",
         "timestamp": "2025-03-28T18:05:04.490Z"
@@ -101,6 +110,7 @@
         "category": "Jeans",
         "department": "Men",
         "price": 900,
+        "stock": 1,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7370440_903_f_f_sweet_sweet_mga_skate_jeans2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
         "timestamp": "2024-11-26T21:40:40.273Z"
     },
@@ -111,6 +121,7 @@
         "category": "Shoes",
         "department": "Men",
         "price": 600,
+        "stock": 9,
         "image1": "https://img01.ztat.net/article/spp-media-p1/c59213a3947e4727a9c21242ed4c6e42/85a214130698463b98c4ac4a87c98488.jpg?imwidth=156",
         "image2": "https://img01.ztat.net/article/spp-media-p1/c6eaaa3e7e86439d89191980946f8a97/11b007b30d7541c9b13dd742e0d7edaf.jpg?imwidth=156&filter=packshot ",
         "timestamp": "2025-05-10T23:40:01.750Z"
@@ -122,6 +133,7 @@
         "category": "Shoes",
         "department": "Men",
         "price": 650,
+        "stock": 4,
         "image1": "https://cdn.skatedeluxe.com/thumb/wU74IYd7kxDbF7S__KWthNbTxdE=/fit-in/600x700/filters:fill(white):brightness(-4)/product/166509-0-DC-Manteca4.jpg",
         "image2": "https://cdn.skatedeluxe.com/thumb/v6irUNNoUz2lE4Jg1rxuwkCy7Xc=/fit-in/600x700/filters:fill(white):brightness(-4)/product/166509-1-DC-Manteca4.jpg",
         "timestamp": "2024-12-12T06:03:05.566Z"
@@ -133,6 +145,7 @@
         "category": "T-shirt",
         "department": "Women",
         "price": 150,
+        "stock": 15,
         "image1": "https://image.hm.com/assets/hm/04/9b/049b8b579cdcc15e9fa9bdc0074a5e49db6da9f0.jpg?imwidth=1536",
         "image2": "https://image.hm.com/assets/hm/33/04/330416de3b290c19b8b37f33325b834a902ae321.jpg?imwidth=1536",
         "timestamp": "2024-12-24T13:32:54.331Z"
@@ -144,6 +157,7 @@
         "category": "T-shirt",
         "department": "Women",
         "price": 250,
+        "stock": 20,
         "image1": "https://img01.ztat.net/article/spp-media-p1/5c049da8f70b44eba11d342e04befacc/91d13ec1d0a54ef5b9d61c2b0f06d8f8.jpg?imwidth=1800&filter=packshot",
         "timestamp": "2024-12-16T13:24:41.896Z"
     },
@@ -154,6 +168,7 @@
         "category": "Sweatshirt",
         "department": "Women",
         "price": 550,
+        "stock": 8,
         "image1": "https://img01.ztat.net/article/spp-media-p1/b5f93bb1898f4abdbc29aaf7244f5cdc/9df742e5bf194715ab49a80ec6894874.jpg?imwidth=1800",
         "timestamp": "2024-12-20T06:56:48.320Z"
     },
@@ -164,6 +179,7 @@
         "category": "Sweatshirt",
         "department": "Women",
         "price": 300,
+        "stock": 12,
         "image1": "https://image.hm.com/assets/hm/b2/ed/b2edf426d6d1aeac9e204e582f0d6412c6188adf.jpg?imwidth=1536",
         "image2": "https://image.hm.com/assets/hm/6d/7c/6d7c6ab4a8332d49af4a68e68d0d4f29ebaee408.jpg?imwidth=1536",
         "timestamp": "2025-02-13T14:36:09.965Z"
@@ -175,6 +191,7 @@
         "category": "Hoodies",
         "department": "Women",
         "price": 850,
+        "stock": 5,
         "image1": "https://img01.ztat.net/article/spp-media-p1/8f9295630501462a985133b3bb744911/75d764489e2f47b4a3a26aeefede6d39.jpg?imwidth=1800&filter=packshot",
         "image2": "https://img01.ztat.net/article/spp-media-p1/1e5b1a6bfd834c31bbf4673e030d4ad9/c0c0d528138747a796ebd11670915e1c.jpg?imwidth=1800",
         "timestamp": "2025-01-16T11:36:03.563Z"
@@ -186,6 +203,7 @@
         "category": "Hoodies",
         "department": "Women",
         "price": 700,
+        "stock": 0,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7367887_002_f_f_junkyard_jycloseuphoodieprinted2411_q3_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=800&q=60",
         "timestamp": "2025-01-31T10:47:11.677Z"
     },
@@ -196,6 +214,7 @@
         "category": "Pants",
         "department": "Women",
         "price": 550,
+        "stock": 6,
         "image1": "https://img01.ztat.net/article/spp-media-p1/81c8da28cc4a42f1b2bad3838ce041ea/e24d57f80b9a4d728e15f2daacd90e54.jpg?imwidth=1800",
         "timestamp": "2025-02-23T04:03:12.780Z"
     },
@@ -206,6 +225,7 @@
         "category": "Pants",
         "department": "Women",
         "price": 600,
+        "stock": 4,
         "image1": "https://www.dickieslife.com/media/catalog/product/cache/a4fef9ead58a23401f302d3c347a5869/D/K/DK0A863MBLK1-50_1_10.jpg",
         "timestamp": "2024-12-11T21:10:06.735Z"
     },
@@ -216,6 +236,7 @@
         "category": "Jeans",
         "department": "Women",
         "price": 300,
+        "stock": 10,
         "image1": "https://image.hm.com/assets/hm/79/ac/79ac3ebed4bc2a4496ef0e5a18260e2294631974.jpg?imwidth=1536",
         "timestamp": "2025-04-23T15:53:04.284Z"
     },
@@ -226,6 +247,7 @@
         "category": "Jeans",
         "department": "Women",
         "price": 700,
+        "stock": 3,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7366337_520_f_f_junkyard_jy_skate_jeans_aca2409_q3_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
         "timestamp": "2025-01-06T18:51:46.903Z"
     },
@@ -236,6 +258,7 @@
         "category": "Shoes",
         "department": "Women",
         "price": 400,
+        "stock": 2,
         "image1": "https://image-resizing.booztcdn.com/reebok-classics/rcsw0074747_cpalbluwhtpalblu.webp?has_grey=1&has_webp=1&size=w400&dpr=2.5",
         "image2": "https://image-resizing.booztcdn.com/reebok-classics/rcsw0074747_cpalbluwhtpalblu_3.webp?has_grey=1&has_webp=1&size=w400&dpr=2.5",
         "timestamp": "2025-01-18T19:26:37.205Z"
@@ -247,6 +270,7 @@
         "category": "Shoes",
         "department": "Women",
         "price": 600,
+        "stock": 5,
         "image1": "https://images.blue-tomato.com/is/image/bluetomato/305260313_front.jpg-RMu-Cfz52rWXrRSYbAjdhcTS9NE/305260313+front+jpg.jpg?$tsh$&wid=1324&hei=1764&fit=crop%2C1",
         "image2": "https://images.blue-tomato.com/is/image/bluetomato/305260313_detail01.jpg-7s1H98PZTB6pk2TgcEvcyywcoXc/305260313+detail01+jpg.jpg?$tsh$&wid=198&hei=264&fit=crop%2C1",
         "timestamp": "2024-11-18T07:27:38.582Z"
@@ -258,6 +282,7 @@
         "category": "T-shirt",
         "department": "Unisex",
         "price": 400,
+        "stock": 10,
         "image1": "https://tshirtstore.centracdn.net/client/dynamic/images/10381_c985acc34d-22789_1-ded-large.jpg",
         "image2": "https://tshirtstore.centracdn.net/client/dynamic/images/10381_37f3569348-22789_2-ded-large.jpg",
         "timestamp": "2025-01-16T04:30:51.504Z"
@@ -269,6 +294,7 @@
         "category": "T-shirt",
         "department": "Unisex",
         "price": 350,
+        "stock": 8,
         "image1": "https://assets.vans.eu/images/t_img/c_fill,g_center,f_auto,h_815,w_652,e_unsharp_mask:100/dpr_2.0/v1730503995/VN000JEHFS8-HERO/Skate-difficult-to-love-TShirt.png",
         "image2": "https://assets.vans.eu/images/t_img/c_fill,g_center,f_auto,h_815,w_652,e_unsharp_mask:100/dpr_2.0/v1730503995/VN000JEHFS8-ALT1/Skate-difficult-to-love-TShirt.png",
         "timestamp": "2024-11-23T10:08:23.372Z"
@@ -280,6 +306,7 @@
         "category": "Sweatshirt",
         "department": "Unisex",
         "price": 600,
+        "stock": 15,
         "image1": "https://veganoutfitters.com/cdn/shop/files/Pastel-Coral-sweatshirt-black_PF_V2_1024x1024@2x.jpg?v=1743157971",
         "timestamp": "2024-11-26T03:40:19.494Z"
     },
@@ -290,6 +317,7 @@
         "category": "Sweatshirt",
         "department": "Unisex",
         "price": 750,
+        "stock": 20,
         "image1": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/22ab524684974002af77c87397d56ee7_9366/Winter_Resort_Mountain_Graphic_Fleece_Crewneck_Sweatshirt_Burgundy_KC3512_02_laydown.jpg",
         "image2": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9f75108b1a0472588f1e529fdb9def0_9366/Winter_Resort_Mountain_Graphic_Fleece_Crewneck_Sweatshirt_Burgundy_KC3512_01_laydown.jpg ",
         "timestamp": "2025-03-30T15:56:26.904Z"
@@ -301,6 +329,7 @@
         "category": "Hoodies",
         "department": "Unisex",
         "price": 700,
+        "stock": 5,
         "image1": "https://www.bycastello.se/cdn/shop/files/image_236_1725349125103-29492930-57523722-64759900_6.png?v=1739129811&width=1000",
         "image2": "https://www.bycastello.se/cdn/shop/files/image_773_1725349125049-61395392-45022748-62669814_9.jpg?v=1739129810&width=800",
         "timestamp": "2025-02-09T13:35:08.028Z"
@@ -312,6 +341,7 @@
         "category": "Hoodies",
         "department": "Unisex",
         "price": 750,
+        "stock": 3,
         "image1": "https://junkyard.imgix.net/globalassets/productimages/7356878_700_f_f_cava_cava_big_skate_hood_print2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
         "image2": "https://junkyard.imgix.net/globalassets/productimages/7356878_700_b_f_cava_cava_big_skate_hood_print2503_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
         "timestamp": "2025-03-26T16:00:06.240Z"
@@ -323,6 +353,7 @@
         "category": "Pants",
         "department": "Unisex",
         "price": 800,
+        "stock": 2,
         "image1": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3b5ead72e81f4f2aa17cc7276cb72e47_9366/Manchesterbyxor_Gra_JD5411_01_laydown.jpg ",
         "timestamp": "2025-01-22T08:14:30.892Z"
     },
@@ -333,6 +364,7 @@
         "category": "Pants",
         "department": "Unisex",
         "price": 250,
+        "stock": 7,
         "image1": "https://image.hm.com/assets/hm/43/5d/435daa8f9ce549a46b7cf4cff1a67b4efa8709de.jpg?imwidth=2160",
         "timestamp": "2025-01-01T04:19:04.129Z"
     },
@@ -343,6 +375,7 @@
         "category": "Jeans",
         "department": "Unisex",
         "price": 1000,
+        "stock": 1,
         "image1": "https://caliroots.com/cdn/shop/products/60640-28_001_5000x.png?v=1679713908",
         "timestamp": "2024-11-27T16:17:37.223Z"
     },
@@ -353,6 +386,7 @@
         "category": "Jeans",
         "department": "Unisex",
         "price": 700,
+        "stock": 0,
         "image1": "https://junkyard.imgix.net/globalassets/21---other/productimages/7332556_510_f_f_sweetsktbs_sweetbigskatejeansnos2312_nos_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=1000&q=60",
         "timestamp": "2024-12-03T19:22:32.081Z"
     },
@@ -363,6 +397,7 @@
         "category": "Shoes",
         "department": "Unisex",
         "price": 600,
+        "stock": 3,
         "image1": "https://img01.ztat.net/article/spp-media-p1/36991a5982464e878bfaf38361927795/fe59b0ffe321461baa2942462f5cb69e.jpg?imwidth=156&filter=packshot",
         "image2": "https://img01.ztat.net/article/spp-media-p1/9b708f57cbba4558b3de87931f137bc5/7122b4036bef41f4a2e93213e7d22cbf.jpg?imwidth=156 ",
         "timestamp": "2025-04-25T03:54:13.700Z"
@@ -374,6 +409,7 @@
         "category": "Shoes",
         "department": "Unisex",
         "price": 850,
+        "stock": 2,
         "image1": "https://img01.ztat.net/article/spp-media-p1/121af5fde74b43cbaf355ab400c82f3a/b49e3f4b94274db9886b2fa178d51bfa.jpg?imwidth=156",
         "image2": "https://img01.ztat.net/article/spp-media-p1/7a7a33053f274dc192ea9cf63823b1b1/c873d0d9d3114d99bbde953674ae15ae.jpg?imwidth=156",
         "timestamp": "2025-05-16T19:54:24.731Z"
@@ -385,6 +421,7 @@
         "category": "Shoes",
         "department": "Men",
         "price": 500,
+        "stock": 8,
         "image1": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300529_dcshoes,p_ovs_frt1.jpg",
         "image2": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300529_dcshoes,p_ovs_frt2.jpg",
         "image3": "",
@@ -397,6 +434,7 @@
         "category": "Skateboards",
         "department": "Unisex",
         "price": 349,
+        "stock": 10,
         "image1": "https://www.xxl.se/filespin/b1de9a54bf264ca4a1d2126f5d17ab15?quality=75&bgcolor=efefef&resize=1080%2C1080",
         "image2": "",
         "image3": "",
@@ -409,6 +447,7 @@
         "category": "Shoes",
         "department": "Women",
         "price": 999,
+        "stock": 5,
         "image1": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300678_dcshoes,p_bwp_frt2.jpg",
         "image2": "https://images.napali.app/global/dcshoes-products/all/default/hi-res/300678_dcshoes,p_bwp_frt3.jpg",
         "image3": "",
