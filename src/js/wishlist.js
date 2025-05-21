@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>Stock: ${product.stock} st</p>
       <p>Price: ${product.price} kr</p>
     `;
+    
     wishlistContainer.appendChild(card);
   });
 });

@@ -41,15 +41,18 @@ export function createProductCard(product) {
 `
   const wishlistBtn = card.querySelector('#addToWishlistBtn');
   const icon = card.querySelector('#addToWishlistBtnIcon');
-  const label = card.querySelector('.wishlist-label')
+  const label = card.querySelector('.wishlist-label');
+
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
   wishlistBtn.addEventListener('click', (e) => {
     e.stopPropagation() 
     const isFilled = icon.classList.toggle('filled-heart');
     label.textContent = isFilled ? 'Added to wishlist' : 'Add to wishlist:';
 
-  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-    if (isFilled) {
+    const productExists = wishlist.some(p => p.id === product.id)
+
+    if (isFilled && !productExists) {
       wishlist.push(product);
     } else {
       wishlist = wishlist.filter(p => p.id !== product.id);
