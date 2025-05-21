@@ -21,6 +21,20 @@ async function getProducts() {
     }
 }
 
+async function getProductById(id) {
+    try {
+        const products = await getProducts();
+        const product = products.find((p) => p.id === id);
+        if (!product) {
+            throw new Error("Product not found");
+        }
+        return product;
+    } catch (error) {
+        console.error("Error fetching product by ID:", error);
+        throw error;
+    }
+}
+
 async function editProduct(id, updatedProduct) {
     try {
         const products = await getProducts();
@@ -66,6 +80,17 @@ app.get("/categories", async (req, res) => {
     } catch (error) {
         console.error("Error fetching categories:", error);
         res.status(500).json({ error: "Failed to fetch categories" });
+    }
+});
+
+app.get("/products/:id", async (req, res) => {
+    const { id } = req.params;
+    try {
+        const product = await getProductById(id);
+        res.json(product);
+    } catch (error) {
+        console.error("Error fetching product:", error);
+        res.status(404).json({ error: "Product not found" });
     }
 });
 
