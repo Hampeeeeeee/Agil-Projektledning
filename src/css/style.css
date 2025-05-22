@@ -63,8 +63,9 @@ h6 {
     background-color: #000;
     color: #fff;
     text-align: center;
+
     padding: 0.5em;
-    width: 90%;
+    width: 97%;
 }
 
 .banner-text {
@@ -76,15 +77,17 @@ h6 {
 
 /* Header */
 .main-header {
-    background-image: url(https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=1200);
-    background-size: cover;
+    background-image: url("/src/images/header_graffiti_1.png");
+    background-color: rgba(255, 255, 255, 0.113); /* 50% white */
+    background-blend-mode: lighten;
+    background-size: 110% auto; /* Zoom in */
+    background-position: 40% 0; /* Move a bit to the right */
     display: flex;
     width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
     max-height: 190px;
     max-width: 100%;
-    /* overflow-x: hidden; */
     align-items: center;
     padding: 0 2rem;
     border-bottom: 3px solid #000;
@@ -130,7 +133,7 @@ h6 {
     display: flex;
     gap: 2rem;
    flex-wrap: wrap;
-   margin-right: 400px;
+   margin-right: 500px;
   justify-content: center;
   align-items: start;
 }
@@ -146,16 +149,21 @@ h6 {
     color: var(--button-color);
 }
 
+
+
 .dropdown-button {
-    background-color: transparent;
-    color: var(--text-color);
-    border: 1px solid #000;
-    padding: 0.5rem 1rem;
-    font-family: var(--font-main);
-    font-size: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #111;
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+  border-radius: 10px; /* long oval like a skateboard deck */
+  box-shadow: inset 0 0 0 2px #fff, 0 3px 8px rgba(0, 0, 0, 0.4);
+  position: relative;
 }
 
 .dropdown-button:hover {
@@ -196,6 +204,9 @@ h6 {
     display: flex;
     gap: 1rem;
     align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.703); */
+    padding: 10px;
+    color: white;
 }
 
 /* Bootstrap icon reset */
@@ -203,7 +214,7 @@ h6 {
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
-    color: var(--text-color);
+    color: white;
     vertical-align: middle;
 }
 
@@ -214,6 +225,7 @@ h6 {
     font-weight: 100;
     font-size: 0.95rem;
     cursor: pointer;
+    
 }
 
 /*hover effect for icons/text */
@@ -225,7 +237,7 @@ h6 {
 
 .fa-user-lock {
     border: none;
-    margin-right: -20px;
+
 }
 
 .site-footer {
@@ -405,11 +417,11 @@ button {
 }
 /* Slider Container */
 .img_slider {
+    
     width: 100%;
     margin: 0;
     overflow: hidden;
     position: relative;
-
     box-shadow: none;
 }
 

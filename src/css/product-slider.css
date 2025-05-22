@@ -5,10 +5,15 @@
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background: linear-gradient(to bottom, #263c5f 0%, #2a7f91 100%);
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/src/images/pexels-jy-lee-438370-1137752.jpg");
+    background-size: cover;
+    background-position: center -100px;
+    background-blend-mode: darken;
     padding: 1.5rem 0;
     height: 350px;
-  }
+}
   
   .slider-title {
     text-align: center;
