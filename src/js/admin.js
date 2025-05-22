@@ -5,9 +5,6 @@ import {
     createProductCard,
 } from "../main.js";
 
-console.log("✅ admin.js loaded");
-
-// Populate existing categories into dropdown
 export function populateCategoryDropdown() {
     const categoryDropdown = document.getElementById("product-category");
     if (!categoryDropdown) return;
@@ -147,14 +144,6 @@ window.addEventListener("DOMContentLoaded", () => {
         "input",
         () => (categoryDropdown.value = "")
     );
-
-    // Redirect knapp
-    const viewProductsBtn = document.getElementById("view-products-btn");
-    if (viewProductsBtn)
-        viewProductsBtn.addEventListener(
-            "click",
-            () => (window.location.href = "index.html")
-        );
 
     const highlightsForm = document.getElementById("highlights-form");
     if (highlightsForm) {
