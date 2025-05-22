@@ -77,16 +77,16 @@ h6 {
 /* Header */
 .main-header {
     background-image: url(https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=1200);
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
-    max-height: 180px;
+    max-height: 190px;
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     border-bottom: 3px solid #000;
     margin-bottom: 30px;
 }
@@ -101,7 +101,7 @@ h6 {
 
 #logo {
     width: 120px;
-    margin-left: 0px;
+    margin-left: -30px;
 }
 
 .logo-button {
@@ -109,6 +109,7 @@ h6 {
     color: inherit;
     font-weight: bold;
     font-size: 2rem;
+    margin-top: 20px;
 }
 
 .logo-button img {
@@ -116,7 +117,7 @@ h6 {
   height: auto;
   max-height: 100%; /* ensures it won't grow taller than its container */
   object-fit: contain;
-  margin-top: 25px;
+  margin-top: px;
   margin-right: 0px;
 }
 
