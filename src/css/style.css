@@ -133,7 +133,7 @@ h6 {
     display: flex;
     gap: 2rem;
    flex-wrap: wrap;
-   margin-right: 500px;
+   margin-right: 300px;
   justify-content: center;
   align-items: start;
 }
