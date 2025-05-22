@@ -12,6 +12,7 @@
 html,
 body {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
@@ -76,14 +77,15 @@ h6 {
 /* Header */
 .main-header {
     background-image: url(https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=1200);
-    background-size: 110%;
+    background-size: 100%;
     display: flex;
     width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
     max-height: 180px;
+    max-width: 100%;
+    overflow-x: hidden;
     align-items: center;
-    /* background: linear-gradient(to left, #263c5f 30%, #2a7f91 70%); */
     padding: 1rem 2rem;
     border-bottom: 3px solid #000;
     margin-bottom: 30px;
@@ -115,7 +117,7 @@ h6 {
   max-height: 100%; /* ensures it won't grow taller than its container */
   object-fit: contain;
   margin-top: 25px;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 
 .logo-button:hover {
@@ -126,8 +128,9 @@ h6 {
 .nav-menu {
     display: flex;
     gap: 2rem;
-    margin-right: 600px;
-    margin-left: px;
+   flex-wrap: wrap;
+   margin-right: 400px;
+  justify-content: center;
 }
 
 .dropdown {
