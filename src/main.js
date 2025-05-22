@@ -34,21 +34,30 @@ export function createProductCard(product) {
     <p>Price: ${product.price} kr</p>
     <p class="wishlist-text">
   <span class="wishlist-label">Add to wishlist:</span>
-  <button id="addToWishlistBtn" title="Wishlist">
-    <i id="addToWishlistBtnIcon">♥</i>
+  <button class="add-to-wishlist-btn" title="Wishlist">
+  <i class="wishlist-icon">♥</i>
   </button>
   </p>
 `
-  const wishlistBtn = card.querySelector('#addToWishlistBtn');
-  const icon = card.querySelector('#addToWishlistBtnIcon');
+  const wishlistBtn = card.querySelector('.add-to-wishlist-btn');
+  const icon = card.querySelector('.wishlist-icon');
   const label = card.querySelector('.wishlist-label');
 
   let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
+  const isInWishlist = wishlist.some(p => p.id === product.id);
+  if (isInWishlist) {
+    icon.classList.add('filled-heart');
+    label.textContent = 'Added to wishlist';
+  };
+
   wishlistBtn.addEventListener('click', (e) => {
-    e.stopPropagation() 
+    e.stopPropagation();
+
     const isFilled = icon.classList.toggle('filled-heart');
     label.textContent = isFilled ? 'Added to wishlist' : 'Add to wishlist:';
+
+    wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
     const productExists = wishlist.some(p => p.id === product.id)
 
@@ -57,6 +66,7 @@ export function createProductCard(product) {
     } else {
       wishlist = wishlist.filter(p => p.id !== product.id);
     }
+
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
 });
 

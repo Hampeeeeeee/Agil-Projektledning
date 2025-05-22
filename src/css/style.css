@@ -336,18 +336,18 @@ button {
     cursor: pointer;
 }
 
-#addToWishlistBtn {
+.add-to-wishlist-btn {
     background-color: transparent;
 }
 
-#addToWishlistBtnIcon {
+.wishlist-icon {
     display: flex;
     justify-content: start;
     background-color: transparent;
     font-size: 30px;
 }
 
-#addToWishlistBtnIcon:hover {
+.wishlist-icon:hover {
     transform: scale(1.2);
     color: rgb(170, 0, 0);
     transition: transform 0.5s, color 0.5s;
@@ -383,6 +383,14 @@ button {
 
 .footer-bottom .social-icon:hover {
     color: var(--button-color);
+}
+
+#wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 /* Product Card Styles */
