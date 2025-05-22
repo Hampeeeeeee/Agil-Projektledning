@@ -133,34 +133,62 @@ export async function displayProducts() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Import the CSS for the product popup
-  const link = document.createElement("link")
-  link.rel = "stylesheet"
-  link.href = "./css/product-popup.css"
-  document.head.appendChild(link)
+export async function fetchHighlights() {
+  const response = await fetch(`${API_BASE}/highlights`)
+  if (!response.ok) {
+    throw new Error('Failed to fetch highlights')
+  }
+  return response.json()
+}
 
-  displayProducts()
-
-  const adminForm = document.getElementById("admin-login-form")
-  if (adminForm) {
-    adminForm.addEventListener("submit", (event) => {
-      event.preventDefault()
-      window.location.href = "admin.html"
+export function displayHighlights() {
+  const container = document.getElementById("highlights-container")
+  if (!container) return
+  fetchHighlights()
+    .then((products) => {
+      container.innerHTML = ""
+      products.forEach((product) => {
+        const card = createProductCard(product)
+        container.appendChild(card)
+      })
     })
-    adminForm.reset()
-  }
+    .catch((error) => {
+      console.error('Error loading highlights:', error)
+      container.innerHTML = '<p>Misslyckades ladda highlights.</p>'
+    })
+}
 
-  const isAdminPage = window.location.pathname.includes("admin.html")
-  if (isAdminPage) {
-    import("./js/admin.js")
-      .then((adminModule) => {
-        // Admin module will initialize itself
+document.addEventListener("DOMContentLoaded", () => {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "./css/product-popup.css"
+    document.head.appendChild(link)
+
+    displayProducts()
+
+    const path = window.location.pathname.split("/").pop()
+    if (path === "" || path === "index.html" || path === "/") {
+      displayHighlights()
+    }
+
+    const adminForm = document.getElementById("admin-login-form")
+    if (adminForm) {
+      adminForm.addEventListener("submit", (event) => {
+        event.preventDefault()
+        window.location.href = "admin.html"
       })
-      .catch((err) => {
-        console.error("Failed to load admin module:", err)
-      })
-  }
+      adminForm.reset()
+    }
+
+    const isAdminPage = window.location.pathname.includes("admin.html")
+    if (isAdminPage) {
+      import("./js/admin.js")
+        .then((adminModule) => {
+        })
+        .catch((err) => {
+          console.error("Failed to load admin module:", err)
+        })
+    }
 })
 
 export { API_BASE }

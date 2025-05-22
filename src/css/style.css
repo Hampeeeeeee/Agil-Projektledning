@@ -693,7 +693,6 @@ h2 {
     font-size: 0.9rem;
 }
 
-/* Confirmation Message Styling */
 .confirmation-message {
     display: none;
     text-align: left;
@@ -734,7 +733,6 @@ h2 {
     background-color: #000;
 }
 
-/* Ensure admin page button matches contact page styling */
 .custom-button {
     align-self: flex-start;
     background-color: transparent;
@@ -752,7 +750,6 @@ h2 {
     color: #fff;
 }
 
-/* Admin Page Styling */
 .admin-section {
     padding: 4rem 2rem;
     max-width: 700px;
@@ -813,7 +810,6 @@ h2 {
     background-color: #000;
 }
 
-/* File input styling */
 input[type="file"] {
     color-scheme: dark;
     width: 115px;
@@ -853,4 +849,25 @@ input[type="file"]::-webkit-file-upload-button:hover {
 
 #admin:hover {
     background-color: #2a7f91;
+}
+
+#highlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 1rem 2rem;
+    justify-items: center;
+}
+
+#highlights-container .product-card {
+    width: 100%;
+    max-width: 180px;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#highlights-container .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
