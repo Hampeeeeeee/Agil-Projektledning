@@ -418,7 +418,7 @@ input[type="file"]::-webkit-file-upload-button:hover {
 .highlight-item {
     display: flex;
     align-items: center;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     padding: 0.4rem;
     font-size: 0.9rem;
@@ -433,13 +433,56 @@ input[type="file"]::-webkit-file-upload-button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 0.4rem;
-    max-height: 200px;       
-    overflow-y: auto;       
-    padding-right: 0.5rem;    
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
 }
 
 .highlight-item {
-    padding: 0.3rem;         
-    font-size: 0.85rem;  
+    padding: 0.3rem;
+    font-size: 0.85rem;
     align-items: center;
+}
+
+#admin-messages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.message-card {
+    background: linear-gradient(to bottom, #8dcdda 0%, #2a7f91 100%);
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(34, 48, 69, 0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.message-card:hover {
+    box-shadow: 0 4px 16px rgba(34, 48, 69, 0.15);
+    transform: translateY(-4px) scale(1.01);
+}
+
+.message-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    color: #222;
+}
+
+.message-card p {
+    margin: 0.4rem 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.message-card p:first-child {
+    font-size: 0.8rem;
+    color: #444;
+    font-style: italic;
 }
