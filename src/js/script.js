@@ -14,10 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
       content.style.display = isVisible ? "none" : "block";
     });
   });
-
-  document.addEventListener("click", () => {
-    document.querySelectorAll(".dropdown-content").forEach((c) => {
-      c.style.display = "none";
-    });
-  });
 });
+
+// denna klyddade, gav dropdown-content display: none
+//   document.addEventListener("click", () => {
+//     document.querySelectorAll(".dropdown-content").forEach((c) => {
+//       c.style.display = "none";
+//     });
+//   });
+// });
