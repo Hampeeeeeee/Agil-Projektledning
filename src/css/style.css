@@ -863,3 +863,32 @@ input[type="file"]::-webkit-file-upload-button:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+.custom-search-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-search-input {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    opacity: 0;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.custom-search-wrapper:hover .custom-search-input {
+    width: 160px;
+    opacity: 1;
+    pointer-events: auto;
+     transition: border-color 0.3s ease;
+}
