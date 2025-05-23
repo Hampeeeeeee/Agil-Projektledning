@@ -116,12 +116,12 @@ h6 {
 }
 
 .logo-button img {
-  width: 9vw;      /* increase from 5vw to 7vw */
-  height: auto;
-  max-height: 100%; /* ensures it won't grow taller than its container */
-  object-fit: contain;
-  margin-top: px;
-  margin-right: 0px;
+    width: 9vw; /* increase from 5vw to 7vw */
+    height: auto;
+    max-height: 100%; /* ensures it won't grow taller than its container */
+    object-fit: contain;
+    margin-top: px;
+    margin-right: 0px;
 }
 
 .logo-button:hover {
@@ -132,10 +132,10 @@ h6 {
 .nav-menu {
     display: flex;
     gap: 2rem;
-   flex-wrap: wrap;
-   margin-right: 300px;
-  justify-content: center;
-  align-items: start;
+    flex-wrap: wrap;
+    margin-right: 300px;
+    justify-content: center;
+    align-items: start;
 }
 
 .dropdown {
@@ -149,21 +149,19 @@ h6 {
     color: var(--button-color);
 }
 
-
-
 .dropdown-button {
-  background-color: #111111f4;
-  color: #fff;
-  font-family: var(--font-main);
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid #000;
-  border-radius: 15px; /* long oval like a skateboard deck */
-  box-shadow: inset 0 0 0 2px #fff, 0 3px 8px rgba(0, 0, 0, 0.4);
-  position: relative;
+    background-color: #111111f4;
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+    border-radius: 15px; /* long oval like a skateboard deck */
+    box-shadow: inset 0 0 0 2px #fff, 0 3px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 .dropdown-button:hover {
@@ -231,7 +229,6 @@ h6 {
     font-weight: 100;
     font-size: 0.95rem;
     cursor: pointer;
-    
 }
 
 /*hover effect for icons/text */
@@ -243,7 +240,6 @@ h6 {
 
 .fa-user-lock {
     border: none;
-
 }
 
 .site-footer {
@@ -264,16 +260,16 @@ h6 {
 .site-footer input,
 .site-footer a,
 .site-footer input::placeholder {
-  color: #ffffff !important;
-  border-color: #ffffff !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
 }
 
 .site-footer input {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .site-footer a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .footer-columns {
@@ -317,7 +313,6 @@ input {
 
 .site-footer,
 .site-footer * {
-  
 }
 
 .footer-col input::placeholder {
@@ -453,7 +448,6 @@ button {
 }
 /* Slider Container */
 .img_slider {
-    
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -590,8 +584,6 @@ h2 {
     transform: translateY(-7px);
     transition: box-shadow 0.2s, transform 0.2s;
 }
-
-
 
 /* On hover: make text visible and slide up */
 .box:hover .image-text {
@@ -751,7 +743,6 @@ h2 {
 }
 
 .admin-section {
-    padding: 4rem 2rem;
     max-width: 700px;
     margin: 0 auto;
     text-align: left;
@@ -864,10 +855,10 @@ input[type="file"]::-webkit-file-upload-button:hover {
     max-width: 180px;
     padding: 0.8rem;
     font-size: 0.9rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 #highlights-container .product-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
