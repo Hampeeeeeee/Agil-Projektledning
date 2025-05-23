@@ -12,5 +12,12 @@
         "email": "pisse@paronpung.com",
         "text": "Goodbye, world!",
         "timestamp": "2025-05-22T20:36:08.478Z"
+    },
+    {
+        "id": "a4acebd1-d36d-4ddd-ab3c-90a8a8bfe635",
+        "name": "Linn",
+        "email": "linn@linn.se",
+        "text": "You can post messages now!",
+        "timestamp": "2025-05-23T08:10:27.432Z"
     }
 ]

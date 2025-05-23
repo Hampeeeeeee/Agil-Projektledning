@@ -26,7 +26,7 @@ function createMessageCard(newMessage) {
     email.textContent = `Email: ${newMessage.email}`;
     card.appendChild(email);
 
-    const messageText = document.createElement("p");
+    const messageText = document.createElement("h4");
     messageText.textContent = `Message: ${newMessage.text}`;
     card.appendChild(messageText);
 
@@ -49,3 +49,51 @@ document.addEventListener("DOMContentLoaded", () => {
             messagesContainer.innerHTML = "<p>Failed to load messages.</p>";
         });
 });
+
+async function postMessage(newMessage) {
+    const response = await fetch(`${API_BASE}/messages`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newMessage),
+    });
+
+    if (!response.ok) {
+        throw new Error("Failed to post message");
+    }
+    return response.json();
+}
+
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        const newMessage = {
+            name,
+            email,
+            text: message,
+            timestamp: new Date().toISOString(),
+        };
+
+        postMessage(newMessage)
+            .then(() => {
+                contactForm.reset();
+                alert("Message sent successfully!");
+            })
+            .catch((error) => {
+                console.error("Error sending message:", error);
+                alert("Failed to send message. Please try again later.");
+            });
+    });
+}
