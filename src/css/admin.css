@@ -326,6 +326,7 @@ input[type="file"]::-webkit-file-upload-button:hover {
     box-shadow: 0 2px 8px rgba(34, 48, 69, 0.08);
     font-size: 0.85rem;
     transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
 }
 
 .admin-product-card:hover {
