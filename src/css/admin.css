@@ -452,7 +452,7 @@ input[type="file"]::-webkit-file-upload-button:hover {
 }
 
 .message-card {
-    background: linear-gradient(to bottom, #8dcdda 0%, #2a7f91 100%);
+    background: linear-gradient(to bottom, #a7a7a7 0%, #696969 100%);
     border-radius: 8px;
     text-align: center;
     padding: 1.2rem;
