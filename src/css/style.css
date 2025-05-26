@@ -413,7 +413,7 @@ button {
 
 .product-card {
     position: relative;
-    background: linear-gradient(to bottom, #88adb4 0%, #2a7f91 100%);
+    background: linear-gradient(to bottom, #a5a5a5 0%, #767676 100%);
     border-radius: 12px;
     overflow: hidden;
     padding: 1.5rem;
