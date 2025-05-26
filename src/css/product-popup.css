@@ -20,7 +20,7 @@
   }
   
   .product-popup {
-    background: linear-gradient(to bottom, #8dcdda 0%, #2a7f91 100%);
+    background: linear-gradient(to bottom, #d0d0d0 0%, #a9a9a9 100%);
     border-radius: 12px;
     width: 90%;
     max-width: 900px;
@@ -33,7 +33,26 @@
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     transform: translateY(20px);
     transition: transform 0.3s;
-  }
+    overflow: hidden;
+}
+
+.product-popup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/src/images/pexels-jy-lee-438370-1137752.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* barely visible */
+    z-index: 0;
+}
+
+.product-popup > * {
+    position: relative;
+    z-index: 1;
+}
+
+  
   
   .product-popup-overlay.active .product-popup {
     transform: translateY(0);
