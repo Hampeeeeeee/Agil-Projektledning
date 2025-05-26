@@ -1,5 +1,6 @@
 export const API_BASE = "http://localhost:3000";
 import { showProductPopup } from "./js/product-popup.js";
+import { setupSearch } from "./js/search.js";
 
 export async function fetchProducts() {
     const response = await fetch(`${API_BASE}/products`);
@@ -175,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(link);
 
     displayProducts();
+    setupSearch();
 
     const path = window.location.pathname.split("/").pop();
     if (path === "" || path === "index.html" || path === "/") {
